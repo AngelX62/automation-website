@@ -1,21 +1,26 @@
 @theme {
-  --color-brand-creme: #f3f1e9;
-  --color-brand-dark: #0d1b2a;
-  --color-brand-muted: #5c6b7d;
-  --color-brand-accent: #1e3a8a;
+  --color-brand-dark: #030305;
+  --color-brand-surface: #0A0F1A;
+  --color-brand-surface-light: #131B2F;
+  --color-brand-border: #1E293B;
+  --color-brand-creme: #F2F3F4;
+  --color-brand-muted: #8A9BB2;
+  --color-brand-accent: #6DA5C0;
+  --color-brand-accent-alt: #A77693;
+  --color-brand-orange: #FF6B35;
   
   --font-sans: var(--font-manrope);
 }
 
 body {
-  background-color: var(--color-brand-creme);
-  color: var(--color-brand-dark);
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-creme);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: var(--color-brand-dark);
-  color: var(--color-brand-creme);
+  background: var(--color-brand-accent);
+  color: var(--color-brand-dark);
 }

@@ -6,15 +6,15 @@ const ERROR_IMG_SRC =
 export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElement>) {
   const [didError, setDidError] = useState(false)
 
+  useEffect(() => {
+    setDidError(false)
+  }, [props.src])
+
   const handleError = () => {
     setDidError(true)
   }
 
   const { src, alt, style, className, ...rest } = props
-
-  useEffect(() => {
-    setDidError(false)
-  }, [src])
 
   return didError ? (
     <div
@@ -22,7 +22,7 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       style={style}
     >
       <div className="flex items-center justify-center w-full h-full">
-        <img src={ERROR_IMG_SRC} alt={alt ?? 'Image unavailable'} {...rest} data-original-url={src} />
+        <img src={ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={src} />
       </div>
     </div>
   ) : (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, Features, Showcase, CTA } from './AuraApp';
+import { Hero, Features, Showcase, Pricing, CTA } from './AuraApp';
 import { motion } from 'motion/react';
 
 export function Home() {
@@ -13,6 +13,7 @@ export function Home() {
       <Hero />
       <Features />
       <Showcase />
+      <Pricing />
       <CTA />
     </motion.div>
   );
