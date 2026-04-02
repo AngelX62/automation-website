@@ -63,9 +63,9 @@ export function About() {
               <div className="grid gap-6 md:grid-cols-[13rem_1fr] md:items-start">
                 <div className="relative h-56 overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-dark">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1571062206768-cae921164c44?q=80&w=1080"
+                    src="/images/laurentius-hanryan.png"
                     alt="Laurentius Hanryan"
-                    className="h-full w-full object-cover object-top opacity-85"
+                    className="h-full w-full object-cover object-top opacity-90"
                   />
                 </div>
                 <div>
