@@ -1,0 +1,1847 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/app/components/AuraApp.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=c211b467"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=c211b467"; const useEffect = __vite__cjsImport3_react["useEffect"]; const useState = __vite__cjsImport3_react["useState"];
+import { Link } from "/node_modules/.vite/deps/react-router.js?v=c211b467";
+import { AnimatePresence, motion } from "/node_modules/.vite/deps/motion_react.js?v=c211b467";
+import {
+  ArrowUpRight,
+  CheckCircle2,
+  Database,
+  LayoutGrid,
+  Menu,
+  Paintbrush,
+  Star,
+  X
+} from "/node_modules/.vite/deps/lucide-react.js?v=c211b467";
+import { ImageWithFallback } from "/src/app/components/figma/ImageWithFallback.tsx";
+import { SITE_LINKS } from "/src/app/site.ts";
+export function Navbar() {
+  _s();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+  return /* @__PURE__ */ jsxDEV(
+    motion.nav,
+    {
+      initial: { opacity: 0, y: -14, filter: "blur(10px)" },
+      animate: { opacity: 1, y: 0, filter: "blur(0px)" },
+      exit: { opacity: 0, y: -14, filter: "blur(10px)" },
+      transition: { duration: 0.34, ease: [0.16, 1, 0.3, 1] },
+      className: "fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-6",
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "mx-auto flex max-w-[85rem] items-center justify-between gap-4 rounded-full border border-brand-border/70 bg-brand-dark/78 px-4 py-3 text-brand-creme shadow-[0_16px_48px_rgba(0,0,0,0.28)] backdrop-blur-md md:px-5", children: [
+          /* @__PURE__ */ jsxDEV(
+            Link,
+            {
+              to: "/",
+              className: "flex items-center gap-2 text-xl font-semibold tracking-tighter text-brand-creme",
+              onClick: () => setIsMenuOpen(false),
+              children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "h-6 w-6 rounded-full bg-gradient-to-tr from-brand-accent to-brand-accent-alt" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 61,
+                  columnNumber: 11
+                }, this),
+                "Aura"
+              ]
+            },
+            void 0,
+            true,
+            {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 56,
+              columnNumber: 9
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV("div", { className: "hidden items-center gap-8 text-sm font-medium text-brand-muted md:flex", children: [
+            /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.services, className: "transition-colors hover:text-brand-creme", children: "Lead Engine" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 65,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.work, className: "transition-colors hover:text-brand-creme", children: "Workflow" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 68,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.about, className: "transition-colors hover:text-brand-creme", children: "About" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 71,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 64,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxDEV(
+              Link,
+              {
+                to: SITE_LINKS.bookDemo,
+                className: "hidden items-center gap-2 rounded-full border border-brand-border bg-brand-surface px-5 py-2.5 text-sm font-medium text-brand-creme transition-all hover:bg-brand-border md:inline-flex",
+                children: [
+                  "Book Demo",
+                  /* @__PURE__ */ jsxDEV(ArrowUpRight, { size: 14 }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 81,
+                    columnNumber: 13
+                  }, this)
+                ]
+              },
+              void 0,
+              true,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 76,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV(
+              "button",
+              {
+                type: "button",
+                className: "inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-border bg-brand-surface text-brand-creme md:hidden",
+                "aria-expanded": isMenuOpen,
+                "aria-controls": "mobile-navigation",
+                "aria-label": isMenuOpen ? "Close navigation menu" : "Open navigation menu",
+                onClick: () => setIsMenuOpen((open) => !open),
+                children: isMenuOpen ? /* @__PURE__ */ jsxDEV(X, { size: 18 }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 91,
+                  columnNumber: 27
+                }, this) : /* @__PURE__ */ jsxDEV(Menu, { size: 18 }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 91,
+                  columnNumber: 45
+                }, this)
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 83,
+                columnNumber: 11
+              },
+              this
+            )
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 75,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 55,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV(AnimatePresence, { children: isMenuOpen ? /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            id: "mobile-navigation",
+            initial: { opacity: 0, y: -12 },
+            animate: { opacity: 1, y: 0 },
+            exit: { opacity: 0, y: -12 },
+            transition: { duration: 0.2 },
+            className: "mx-auto mt-4 max-w-[85rem] rounded-[1.9rem] border border-brand-border bg-brand-dark/95 p-5 text-brand-creme shadow-2xl shadow-black/30 backdrop-blur",
+            children: /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col gap-3 text-sm font-semibold uppercase tracking-[0.12em]", children: [
+              /* @__PURE__ */ jsxDEV(
+                Link,
+                {
+                  to: SITE_LINKS.services,
+                  className: "rounded-2xl px-4 py-3 transition-colors hover:bg-brand-surface",
+                  onClick: () => setIsMenuOpen(false),
+                  children: "Lead Engine"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 107,
+                  columnNumber: 15
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV(
+                Link,
+                {
+                  to: SITE_LINKS.work,
+                  className: "rounded-2xl px-4 py-3 transition-colors hover:bg-brand-surface",
+                  onClick: () => setIsMenuOpen(false),
+                  children: "Workflow"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 114,
+                  columnNumber: 15
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV(
+                Link,
+                {
+                  to: SITE_LINKS.about,
+                  className: "rounded-2xl px-4 py-3 transition-colors hover:bg-brand-surface",
+                  onClick: () => setIsMenuOpen(false),
+                  children: "About"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 121,
+                  columnNumber: 15
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV(
+                Link,
+                {
+                  to: SITE_LINKS.bookDemo,
+                  className: "mt-2 inline-flex justify-center rounded-full bg-brand-creme px-5 py-3 text-brand-dark transition-colors hover:bg-white",
+                  onClick: () => setIsMenuOpen(false),
+                  children: "Book Demo"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 128,
+                  columnNumber: 15
+                },
+                this
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 106,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 98,
+            columnNumber: 9
+          },
+          this
+        ) : null }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 96,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 48,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_s(Navbar, "wSShVbDU3nvMgCOG3Tb8LxwMgA0=");
+_c = Navbar;
+export function Hero() {
+  return /* @__PURE__ */ jsxDEV("section", { className: "relative isolate min-h-screen overflow-hidden px-6 pb-20 pt-28 text-center md:pb-24 md:pt-32", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(96,135,176,0.16),transparent_23%),radial-gradient(circle_at_26%_62%,rgba(255,107,53,0.08),transparent_18%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%)]" }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 146,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(4,9,18,0)_36%,rgba(4,9,18,0.38)_72%,rgba(3,3,5,0.86)_100%)]" }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 147,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:7rem_7rem] opacity-[0.035]" }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 148,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(3,3,5,0.12),rgba(3,3,5,0.34)_54%,rgba(3,3,5,0.92)_100%)]" }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 149,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 24 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+        className: "relative z-10 mx-auto flex max-w-[68rem] flex-col items-center",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "mb-7 inline-flex items-center gap-2 rounded-full border border-brand-border/80 bg-brand-surface/70 px-3 py-1.5 text-xs font-medium text-brand-muted backdrop-blur-md", children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "h-2 w-2 animate-pulse rounded-full bg-[var(--color-brand-orange)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 158,
+              columnNumber: 11
+            }, this),
+            "Custom AI Workflows"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 157,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("h1", { className: "mx-auto mb-6 max-w-[19ch] text-balance text-[9.6vw] font-semibold leading-[0.98] tracking-tighter text-brand-creme drop-shadow-[0_10px_40px_rgba(0,0,0,0.35)] md:max-w-[18ch] md:text-[6vw]", children: [
+            "Custom automation workflows powered by",
+            " ",
+            /* @__PURE__ */ jsxDEV("span", { className: "bg-gradient-to-r from-[var(--color-brand-accent)] to-[var(--color-brand-accent-alt)] bg-clip-text text-transparent", children: "AI agents" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 164,
+              columnNumber: 11
+            }, this),
+            "."
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 162,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mb-9 max-w-2xl text-lg font-medium leading-relaxed text-brand-muted drop-shadow-[0_10px_30px_rgba(0,0,0,0.28)] md:text-xl", children: "Aura builds custom automation workflows for real estate firms and interior design studios that need faster qualification, cleaner routing, and more consistent follow-up." }, void 0, false, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 170,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col items-center gap-4 sm:flex-row", children: [
+            /* @__PURE__ */ jsxDEV(
+              Link,
+              {
+                to: SITE_LINKS.services,
+                className: "group flex w-full items-center justify-center gap-3 rounded-full bg-[var(--color-brand-orange)] px-8 py-4 font-medium text-white transition-all hover:bg-opacity-90 sm:w-auto",
+                children: [
+                  "See What We Build",
+                  /* @__PURE__ */ jsxDEV("div", { className: "rounded-full bg-white/20 p-1.5 transition-colors group-hover:bg-white group-hover:text-[var(--color-brand-orange)]", children: /* @__PURE__ */ jsxDEV(ArrowUpRight, { size: 16 }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 182,
+                    columnNumber: 15
+                  }, this) }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 181,
+                    columnNumber: 13
+                  }, this)
+                ]
+              },
+              void 0,
+              true,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 176,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV(
+              Link,
+              {
+                to: SITE_LINKS.work,
+                className: "group flex w-full items-center justify-center gap-3 rounded-full border border-brand-border bg-brand-surface px-8 py-4 font-medium text-brand-creme transition-all hover:bg-brand-border sm:w-auto",
+                children: "View Workflow"
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 185,
+                columnNumber: 11
+              },
+              this
+            )
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 175,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 151,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 40 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 1, delay: 0.22, ease: [0.16, 1, 0.3, 1] },
+        className: "relative z-10 mx-auto mt-16 w-full max-w-[74rem] overflow-hidden rounded-[2.75rem] border border-brand-border/70 bg-brand-surface shadow-[0_28px_100px_rgba(0,0,0,0.45)]",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "relative flex h-14 items-center justify-between border-b border-brand-border/50 bg-brand-dark/65 px-6 backdrop-blur-sm", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "h-3 w-3 rounded-full bg-red-500/80" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 202,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "h-3 w-3 rounded-full bg-yellow-500/80" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 203,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "h-3 w-3 rounded-full bg-green-500/80" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 204,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 201,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "hidden items-center gap-2 rounded-full border border-brand-border/80 bg-brand-surface/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-muted md:flex", children: "Routing live" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 206,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 200,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "relative h-[20rem] md:h-[29rem]", children: [
+            /* @__PURE__ */ jsxDEV(
+              ImageWithFallback,
+              {
+                src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080",
+                alt: "Architecture Dashboard",
+                className: "absolute inset-0 h-full w-full object-cover opacity-24 grayscale"
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 212,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(162,120,182,0.11),transparent_28%)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 217,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-[linear-gradient(180deg,rgba(5,8,14,0.2),rgba(5,8,14,0.72)_56%,rgba(5,8,14,0.94)_100%)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 218,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:7rem_7rem] opacity-[0.11]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 219,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute right-5 top-5 rounded-full border border-brand-border/80 bg-brand-dark/80 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted md:right-6 md:top-6", children: "7 leads ready for handoff" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 221,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-x-5 bottom-5 grid gap-4 md:grid-cols-[1.22fr_0.78fr] md:inset-x-6 md:bottom-6", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.8rem] border border-brand-border/80 bg-brand-dark/78 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-md md:p-6", children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "flex flex-wrap items-center justify-between gap-3", children: [
+                  /* @__PURE__ */ jsxDEV("div", { children: [
+                    /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Lead velocity" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 229,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("h3", { className: "mt-2 text-xl font-medium tracking-tight text-brand-creme", children: "Northline portfolio" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 232,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 228,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "rounded-full border border-[var(--color-brand-orange)]/25 bg-[var(--color-brand-orange)]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--color-brand-orange)]", children: "Priority inquiry detected" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 236,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 227,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-6 grid grid-cols-3 gap-4", children: [
+                  /* @__PURE__ */ jsxDEV("div", { children: [
+                    /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-muted", children: "New inquiries" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 243,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-[2rem] font-semibold tracking-tighter text-brand-creme", children: "2,405" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 246,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 242,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { children: [
+                    /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-muted", children: "Qualified" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 249,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-[2rem] font-semibold tracking-tighter text-brand-creme", children: "318" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 252,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 248,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { children: [
+                    /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-muted", children: "Response lag" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 255,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-[2rem] font-semibold tracking-tighter text-brand-creme", children: "4m" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 258,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 254,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 241,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-5 h-1.5 overflow-hidden rounded-full bg-black/40", children: /* @__PURE__ */ jsxDEV("div", { className: "h-full w-[72%] rounded-full bg-gradient-to-r from-[var(--color-brand-accent)] via-[var(--color-brand-accent-alt)] to-[var(--color-brand-orange)]" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 263,
+                  columnNumber: 17
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 262,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-brand-muted", children: [
+                  /* @__PURE__ */ jsxDEV("span", { children: "Portal + web forms synced" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 267,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "hidden h-4 w-px bg-brand-border/70 md:block" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 268,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { children: "Urgency surfaced instantly" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 269,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "hidden h-4 w-px bg-brand-border/70 md:block" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 270,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { children: "Ownership assigned before follow-up stalls" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 271,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 266,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 226,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.8rem] border border-brand-border/80 bg-brand-dark/84 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-md md:p-6", children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Routing now" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 277,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "h-2.5 w-2.5 animate-pulse rounded-full bg-[var(--color-brand-orange)]" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 280,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 276,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-4 space-y-3 text-sm text-brand-muted", children: [
+                  /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4 border-b border-brand-border/60 pb-3", children: [
+                    /* @__PURE__ */ jsxDEV("div", { children: [
+                      /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Penthouse inquiry" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 286,
+                        columnNumber: 21
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Budget and move-in window captured" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 287,
+                        columnNumber: 21
+                      }, this)
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 285,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-[var(--color-brand-accent)]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-brand-accent)]", children: "Scored" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 289,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 284,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4 border-b border-brand-border/60 pb-3", children: [
+                    /* @__PURE__ */ jsxDEV("div", { children: [
+                      /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Chelsea showroom" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 296,
+                        columnNumber: 21
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Design consultation request validated" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 297,
+                        columnNumber: 21
+                      }, this)
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 295,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-[var(--color-brand-accent-alt)]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-brand-accent-alt)]", children: "Ready" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 299,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 294,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4", children: [
+                    /* @__PURE__ */ jsxDEV("div", { children: [
+                      /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Next action" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 306,
+                        columnNumber: 21
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Assigned to Julian, CRM updated, follow-up queued" }, void 0, false, {
+                        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                        lineNumber: 307,
+                        columnNumber: 21
+                      }, this)
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 305,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV(ArrowUpRight, { size: 16, className: "mt-1 text-brand-creme" }, void 0, false, {
+                      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                      lineNumber: 309,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 304,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 283,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 275,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 225,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 211,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 194,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 145,
+    columnNumber: 5
+  }, this);
+}
+_c2 = Hero;
+export function Features() {
+  const operations = [
+    {
+      marker: "01",
+      title: "Lead Capture",
+      description: "Pull forms, email, WhatsApp, and listing portals into one intake workflow with clean records from the first touch."
+    },
+    {
+      marker: "02",
+      title: "Agentic Qualification",
+      description: "AI agents read context, score intent, and surface which opportunities need immediate human follow-up."
+    },
+    {
+      marker: "03",
+      title: "Pipeline Handoff",
+      description: "Route qualified opportunities to the right agent, studio lead, or follow-up workflow without manual reassignment."
+    }
+  ];
+  return /* @__PURE__ */ jsxDEV("section", { id: "services", className: "relative z-10 bg-brand-dark px-6 py-20 md:py-24", children: /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-[85rem]", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "mb-16 flex flex-col justify-between gap-8 md:flex-row md:items-end", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "max-w-2xl text-4xl font-medium leading-tight tracking-tighter text-brand-creme md:text-[2.85rem] lg:text-[3.55rem]", children: [
+        "Automation workflows for ",
+        /* @__PURE__ */ jsxDEV("br", { className: "hidden md:block" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 347,
+          columnNumber: 38
+        }, this),
+        " teams where speed closes deals."
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 346,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "max-w-md text-lg font-medium leading-relaxed text-brand-muted", children: "Capture every inquiry, qualify intent instantly, and route the next step across sales and design without manual chasing." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 349,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 345,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "grid grid-cols-1 gap-6 lg:grid-cols-[1.18fr_0.82fr]", children: [
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          whileHover: { y: -5 },
+          className: "group relative flex min-h-[23rem] flex-col justify-between overflow-hidden rounded-[2.5rem] border border-brand-border bg-gradient-to-br from-[#131B2F] to-[#0A0F1A] p-8 md:p-10",
+          children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute right-0 top-0 h-[380px] w-[380px] translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--color-brand-accent)]/10 blur-[84px]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 360,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "relative z-10 flex items-start justify-between gap-6", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex h-14 w-14 items-center justify-center rounded-full border border-brand-border bg-brand-dark text-brand-creme", children: /* @__PURE__ */ jsxDEV(LayoutGrid, { size: 24 }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 364,
+                columnNumber: 17
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 363,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-full border border-brand-border/80 bg-brand-surface/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Visibility layer" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 366,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 362,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "relative z-10 mt-auto max-w-xl", children: [
+              /* @__PURE__ */ jsxDEV("h3", { className: "mb-4 text-[1.85rem] font-medium tracking-tight text-brand-creme md:text-[2.25rem]", children: "AI Lead Console" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 372,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "text-lg leading-relaxed text-brand-muted", children: "Track every inquiry, score urgency, and assign next-step ownership in one workflow view built for fast-moving property teams." }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 375,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-brand-border/70 pt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: [
+                /* @__PURE__ */ jsxDEV("span", { children: "Urgency scoring live" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 381,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "hidden h-4 w-px bg-brand-border/70 md:block" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 382,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Next-step ownership visible" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 383,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "hidden h-4 w-px bg-brand-border/70 md:block" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 384,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Channels unified" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 385,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 380,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 371,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute bottom-8 right-8 translate-x-4 opacity-0 text-[var(--color-brand-orange)] transition-all group-hover:translate-x-0 group-hover:opacity-100", children: /* @__PURE__ */ jsxDEV(ArrowUpRight, { size: 30 }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 390,
+              columnNumber: 15
+            }, this) }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 389,
+              columnNumber: 13
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 356,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          whileHover: { y: -5 },
+          className: "group relative flex min-h-[23rem] flex-col justify-between overflow-hidden rounded-[2.5rem] border border-brand-border p-8",
+          children: [
+            /* @__PURE__ */ jsxDEV(
+              ImageWithFallback,
+              {
+                src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1080",
+                alt: "Interior Detail",
+                className: "absolute inset-0 h-full w-full object-cover opacity-40 grayscale transition-transform duration-700 ease-out group-hover:scale-105"
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 398,
+                columnNumber: 13
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/45 to-brand-dark" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 403,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "relative z-10 flex items-start justify-between gap-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md", children: /* @__PURE__ */ jsxDEV(Paintbrush, { size: 20 }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 407,
+                columnNumber: 17
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 406,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-full border border-white/15 bg-brand-dark/55 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70", children: "Fit screening" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 409,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 405,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "relative z-10 mt-auto max-w-sm", children: [
+              /* @__PURE__ */ jsxDEV("h3", { className: "mb-2 text-[1.65rem] font-medium tracking-tight text-white", children: "Design Intake Agent" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 415,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "leading-relaxed text-white/72", children: "Screen consultation requests for project fit, budget, and timeline before your team spends time on calls." }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 416,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 414,
+              columnNumber: 13
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 394,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 355,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "mt-10 border-y border-brand-border/80", children: /* @__PURE__ */ jsxDEV("div", { className: "grid grid-cols-1 md:grid-cols-3", children: operations.map(
+      (operation, index) => /* @__PURE__ */ jsxDEV("div", { className: "px-0 py-8 md:px-8 md:py-10", children: /* @__PURE__ */ jsxDEV(
+        "div",
+        {
+          className: `h-full ${index === 0 ? "" : "border-t border-brand-border/70 pt-8 md:border-t-0 md:pt-0"} ${index < operations.length - 1 ? "md:border-r md:border-brand-border/70 md:pr-8" : ""}`,
+          children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "text-sm font-light tracking-[0.2em] text-brand-muted", children: operation.marker }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 433,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("h3", { className: "mt-4 text-[1.5rem] font-medium tracking-tight text-brand-creme", children: operation.title }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 434,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { className: "mt-3 max-w-sm text-sm leading-relaxed text-brand-muted", children: operation.description }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 435,
+              columnNumber: 19
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 428,
+          columnNumber: 17
+        },
+        this
+      ) }, operation.title, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 427,
+        columnNumber: 13
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 425,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 424,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 344,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 343,
+    columnNumber: 5
+  }, this);
+}
+_c3 = Features;
+export function Showcase() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "work", className: "relative border-t border-brand-border px-6 py-24 md:py-28", children: /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-[85rem]", children: /* @__PURE__ */ jsxDEV("div", { className: "grid grid-cols-1 items-center gap-16 lg:grid-cols-[0.84fr_1.16fr] lg:gap-10", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "max-w-xl", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "mb-6 inline-flex items-center gap-2 rounded-full bg-[var(--color-brand-accent)]/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--color-brand-accent)]", children: [
+        /* @__PURE__ */ jsxDEV(Star, { size: 12, fill: "currentColor" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 453,
+          columnNumber: 15
+        }, this),
+        " Agentic Workflow"
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 452,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("h2", { className: "mb-6 text-4xl font-medium leading-[1.08] tracking-tighter text-brand-creme md:text-[3.3rem]", children: "AI workflows that keep lead momentum moving." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 455,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mb-10 text-lg leading-relaxed text-brand-muted", children: "From first inquiry to booked call, AI agents qualify demand, trigger follow-up, and push the right next action to your team." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 458,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        Link,
+        {
+          to: SITE_LINKS.bookDemo,
+          className: "inline-flex rounded-full bg-brand-creme px-8 py-4 font-medium text-brand-dark transition-colors hover:bg-white",
+          children: "Book Demo"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 462,
+          columnNumber: 13
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 451,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "relative min-h-[34rem] overflow-hidden rounded-[2.65rem] border border-brand-border bg-[radial-gradient(circle_at_55%_24%,rgba(148,119,171,0.12),transparent_20%),linear-gradient(180deg,#0c1220_0%,#090c14_100%)] p-5 shadow-[0_28px_90px_rgba(0,0,0,0.35)] md:p-6", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:5.75rem_5.75rem] opacity-[0.09]" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 471,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "absolute left-5 top-5 rounded-full border border-brand-border/80 bg-brand-dark/78 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Inquiry intake live" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 473,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "absolute bottom-5 right-5 rounded-full border border-brand-border/80 bg-brand-dark/78 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "CRM synced automatically" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 476,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "relative grid h-full gap-5 pt-12 md:grid-cols-[0.55fr_0.45fr] md:pt-10", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.85rem] border border-brand-border/75 bg-brand-dark/55 p-5 backdrop-blur-sm md:p-6", children: [
+          /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Inquiry intake" }, void 0, false, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 482,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "mt-5 space-y-3", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.25rem] border border-white/8 bg-white/[0.03] px-4 py-3", children: /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Miller Estate" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 487,
+                  columnNumber: 25
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs text-brand-muted", children: "Listing portal inquiry from Tribeca penthouse" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 488,
+                  columnNumber: 25
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 486,
+                columnNumber: 23
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-[var(--color-brand-orange)]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-brand-orange)]", children: "New" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 490,
+                columnNumber: 23
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 485,
+              columnNumber: 21
+            }, this) }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 484,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between border-b border-brand-border/60 pb-3 text-sm text-brand-muted", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Vale Studio" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 498,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Design consultation request" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 499,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 497,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "text-xs", children: "02 min" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 501,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 496,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between border-b border-brand-border/60 pb-3 text-sm text-brand-muted", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Northline Group" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 506,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Website form and email merged" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 507,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 505,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "text-xs", children: "05 min" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 509,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 504,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between text-sm text-brand-muted", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Harbor Loft" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 514,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs", children: "Appointment request with floorplan attached" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 515,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 513,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "text-xs", children: "09 min" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 517,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 512,
+              columnNumber: 19
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 483,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 481,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "grid gap-5 md:grid-rows-[1.02fr_0.98fr]", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.85rem] border border-brand-border/75 bg-brand-dark/55 p-5 backdrop-blur-sm md:p-6", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Qualification signal" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 526,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("h3", { className: "mt-3 text-xl font-medium tracking-tight text-brand-creme", children: "Budget, intent, and timing surfaced early" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 529,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 525,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-full bg-[var(--color-brand-accent)]/12 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--color-brand-accent)]", children: "High intent" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 533,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 524,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "mt-5 rounded-[1.35rem] border border-white/8 bg-white/[0.03] p-4", children: [
+              /* @__PURE__ */ jsxDEV("p", { className: "text-sm font-medium text-brand-creme", children: "3-bedroom residence inquiry" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 539,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-sm leading-relaxed text-brand-muted", children: "Move-in within 30 days, viewing requested, approval status confirmed, premium segment matched." }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 540,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 538,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "mt-5 flex flex-wrap gap-3 text-xs font-medium text-brand-muted", children: [
+              /* @__PURE__ */ jsxDEV("span", { className: "rounded-full border border-brand-border px-3 py-1.5", children: "Urgency 92%" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 546,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "rounded-full border border-brand-border px-3 py-1.5", children: "Budget confirmed" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 547,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "rounded-full border border-brand-border px-3 py-1.5", children: "Fit approved" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 548,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 545,
+              columnNumber: 19
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 523,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.85rem] border border-brand-border/75 bg-brand-dark/55 p-5 backdrop-blur-sm md:p-6", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between gap-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Assignment and follow-up" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 555,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("h3", { className: "mt-3 text-xl font-medium tracking-tight text-brand-creme", children: "Next-step ownership stays visible" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 558,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 554,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 18, className: "text-[var(--color-brand-accent-alt)]" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 562,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 553,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "mt-5 space-y-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Assigned owner" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 568,
+                    columnNumber: 25
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm text-brand-muted", children: "Julian Vance" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 569,
+                    columnNumber: 25
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 567,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-[var(--color-brand-accent-alt)]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-brand-accent-alt)]", children: "Confirmed" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 571,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 566,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "flex items-start justify-between gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("p", { className: "font-medium text-brand-creme", children: "Follow-up action" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 577,
+                    columnNumber: 25
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm text-brand-muted", children: "Phone call queued with property summary attached" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                    lineNumber: 578,
+                    columnNumber: 25
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 576,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(Database, { size: 18, className: "mt-1 text-[var(--color-brand-orange)]" }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                  lineNumber: 580,
+                  columnNumber: 23
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 575,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-2 h-1.5 overflow-hidden rounded-full bg-black/40", children: /* @__PURE__ */ jsxDEV("div", { className: "h-full w-[84%] rounded-full bg-gradient-to-r from-[var(--color-brand-accent)] to-[var(--color-brand-orange)]" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 583,
+                columnNumber: 23
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+                lineNumber: 582,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 565,
+              columnNumber: 19
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 552,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 522,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 480,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 470,
+      columnNumber: 11
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 450,
+    columnNumber: 9
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 449,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 448,
+    columnNumber: 5
+  }, this);
+}
+_c4 = Showcase;
+export function Pricing() {
+  return /* @__PURE__ */ jsxDEV("section", { className: "relative border-y border-brand-border bg-brand-surface px-6 py-20", children: /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-[85rem]", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "mb-14 text-center", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "mb-4 text-[2.3rem] font-medium tracking-tighter text-brand-creme md:text-[2.9rem]", children: "Choose your rollout" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 601,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mx-auto max-w-xl text-lg text-brand-muted", children: "Start with one channel or deploy AI automation workflows across your real estate or interior design pipeline." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 604,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 600,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "grid grid-cols-1 gap-6 md:grid-cols-3", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col rounded-[2rem] border border-brand-border bg-brand-dark p-7 md:p-8", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted", children: "Starter" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 612,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-2 text-5xl font-semibold tracking-tighter text-brand-creme", children: [
+          "$2990",
+          /* @__PURE__ */ jsxDEV("span", { className: "text-lg font-normal text-brand-muted", children: "/mo" }, void 0, false, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 614,
+            columnNumber: 20
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 613,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mb-7 text-sm text-brand-muted", children: "For one funnel and one team." }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 616,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("ul", { className: "mb-9 flex-1 space-y-4", children: [
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-brand-muted" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 620,
+              columnNumber: 17
+            }, this),
+            " AI intake across web and listing portals"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 619,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-brand-muted" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 623,
+              columnNumber: 17
+            }, this),
+            " Qualification rules and routing for one workflow"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 622,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-brand-muted" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 627,
+              columnNumber: 17
+            }, this),
+            " Weekly reporting and workflow tuning"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 626,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 618,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          Link,
+          {
+            to: SITE_LINKS.bookDemo,
+            className: "inline-flex w-full items-center justify-center rounded-full border border-brand-border bg-brand-surface py-4 font-medium text-brand-creme transition-colors hover:bg-brand-border",
+            children: "Book Demo"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 630,
+            columnNumber: 13
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 611,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "relative flex flex-col rounded-[2rem] border border-transparent bg-gradient-to-b from-[var(--color-brand-orange)] to-[#d95c2b] p-7 shadow-2xl shadow-[var(--color-brand-orange)]/20 md:-translate-y-3 md:p-8", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute right-8 top-0 rounded-b-lg bg-brand-dark px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-brand-orange)]", children: "Most Chosen" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 639,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-4 text-sm font-semibold uppercase tracking-wider text-white/80", children: "Growth" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 642,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-2 text-5xl font-semibold tracking-tighter text-white", children: [
+          "$4990",
+          /* @__PURE__ */ jsxDEV("span", { className: "text-lg font-normal text-white/70", children: "/mo" }, void 0, false, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 644,
+            columnNumber: 20
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 643,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mb-7 text-sm text-white/80", children: "For firms scaling lead volume and response time." }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 646,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("ul", { className: "mb-9 flex-1 space-y-4", children: [
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-white", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-white/60" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 650,
+              columnNumber: 17
+            }, this),
+            " Multi-channel lead capture"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 649,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-white", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-white/60" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 653,
+              columnNumber: 17
+            }, this),
+            " AI-agent follow-up and appointment routing"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 652,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-white", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-white/60" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 656,
+              columnNumber: 17
+            }, this),
+            " CRM handoff with workflow reporting"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 655,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-white", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-white/60" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 659,
+              columnNumber: 17
+            }, this),
+            " Ongoing workflow tuning and support"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 658,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 648,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          Link,
+          {
+            to: SITE_LINKS.bookDemo,
+            className: "inline-flex w-full items-center justify-center rounded-full bg-brand-dark py-4 font-medium text-white transition-colors hover:bg-black",
+            children: "Book Demo"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 662,
+            columnNumber: 13
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 638,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col rounded-[2rem] border border-brand-border bg-brand-dark p-7 md:p-8", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted", children: "Portfolio" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 671,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-2 text-5xl font-semibold tracking-tighter text-brand-creme", children: [
+          "$6990",
+          /* @__PURE__ */ jsxDEV("span", { className: "text-lg font-normal text-brand-muted", children: "/mo" }, void 0, false, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 673,
+            columnNumber: 20
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 672,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mb-7 text-sm text-brand-muted", children: "For multi-team property groups and studios." }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 675,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("ul", { className: "mb-9 flex-1 space-y-4", children: [
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-[var(--color-brand-accent)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 679,
+              columnNumber: 17
+            }, this),
+            " Custom agent logic for multiple segments"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 678,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-[var(--color-brand-accent)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 683,
+              columnNumber: 17
+            }, this),
+            " Sales and design intake workflows"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 682,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-[var(--color-brand-accent)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 687,
+              columnNumber: 17
+            }, this),
+            " Cross-team routing and shared pipeline visibility"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 686,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("li", { className: "flex items-center gap-3 text-sm text-brand-creme/80", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 16, className: "text-[var(--color-brand-accent)]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+              lineNumber: 691,
+              columnNumber: 17
+            }, this),
+            " Dedicated rollout and reporting support"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 690,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 677,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          Link,
+          {
+            to: SITE_LINKS.bookDemo,
+            className: "inline-flex w-full items-center justify-center rounded-full border border-brand-border bg-brand-surface py-4 font-medium text-brand-creme transition-colors hover:bg-brand-border",
+            children: "Book Demo"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+            lineNumber: 695,
+            columnNumber: 13
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 670,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 610,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 599,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 598,
+    columnNumber: 5
+  }, this);
+}
+_c5 = Pricing;
+export function CTA() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "contact", className: "relative overflow-hidden px-6 py-24 md:py-28", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute left-1/2 top-1/2 -z-10 h-[720px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-[var(--color-brand-accent)]/18 to-transparent blur-[120px]" }, void 0, false, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 711,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-3xl text-center", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "mx-auto mb-6 max-w-[15ch] text-balance text-[2.65rem] font-medium leading-[1.02] tracking-tighter text-brand-creme md:max-w-[14ch] md:text-[3.8rem]", children: "Turn more inquiries into qualified conversations." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 713,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mx-auto mb-8 max-w-xl text-lg font-medium text-brand-muted", children: "We’ll walk you through lead capture, qualification, routing, and follow-up workflows for your real estate or interior design team." }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 716,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        Link,
+        {
+          to: SITE_LINKS.bookDemo,
+          className: "inline-flex rounded-full bg-brand-creme px-9 py-4 text-lg font-medium text-brand-dark transition-all duration-300 hover:bg-white",
+          children: "Book Demo"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+          lineNumber: 720,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 712,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 710,
+    columnNumber: 5
+  }, this);
+}
+_c6 = CTA;
+export function Footer() {
+  return /* @__PURE__ */ jsxDEV("footer", { className: "border-t border-brand-border bg-brand-dark px-6 py-12", children: /* @__PURE__ */ jsxDEV("div", { className: "mx-auto flex max-w-[85rem] flex-col items-center justify-between gap-6 text-sm font-medium text-brand-muted md:flex-row", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "h-5 w-5 rounded-full bg-gradient-to-tr from-brand-accent to-brand-accent-alt" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 736,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { className: "text-brand-creme", children: "Aura" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 737,
+        columnNumber: 11
+      }, this),
+      " © 2026."
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 735,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "flex gap-8", children: [
+      /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.work, className: "transition-colors hover:text-brand-creme", children: "Workflow" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 740,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.about, className: "transition-colors hover:text-brand-creme", children: "About" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 743,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Link, { to: SITE_LINKS.bookDemo, className: "transition-colors hover:text-brand-creme", children: "Book Demo" }, void 0, false, {
+        fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+        lineNumber: 746,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+      lineNumber: 739,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 734,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx",
+    lineNumber: 733,
+    columnNumber: 5
+  }, this);
+}
+_c7 = Footer;
+var _c, _c2, _c3, _c4, _c5, _c6, _c7;
+$RefreshReg$(_c, "Navbar");
+$RefreshReg$(_c2, "Hero");
+$RefreshReg$(_c3, "Features");
+$RefreshReg$(_c4, "Showcase");
+$RefreshReg$(_c5, "Pricing");
+$RefreshReg$(_c6, "CTA");
+$RefreshReg$(_c7, "Footer");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/Christopher Hanryan/automation_website/src/app/components/AuraApp.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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b3dVcFJpZ2h0IiwiQ2hlY2tDaXJjbGUyIiwiRGF0YWJhc2UiLCJMYXlvdXRHcmlkIiwiTWVudSIsIlBhaW50YnJ1c2giLCJTdGFyIiwiWCIsIkltYWdlV2l0aEZhbGxiYWNrIiwiU0lURV9MSU5LUyIsIk5hdmJhciIsIl9zIiwiaXNNZW51T3BlbiIsInNldElzTWVudU9wZW4iLCJkb2N1bWVudCIsImJvZHkiLCJzdHlsZSIsIm92ZXJmbG93Iiwib3BhY2l0eSIsInkiLCJmaWx0ZXIiLCJkdXJhdGlvbiIsImVhc2UiLCJzZXJ2aWNlcyIsIndvcmsiLCJhYm91dCIsImJvb2tEZW1vIiwib3BlbiIsIkhlcm8iLCJkZWxheSIsIl9jMiIsIkZlYXR1cmVzIiwib3BlcmF0aW9ucyIsIm1hcmtlciIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJtYXAiLCJvcGVyYXRpb24iLCJpbmRleCIsImxlbmd0aCIsIl9jMyIsIlNob3djYXNlIiwiX2M0IiwiUHJpY2luZyIsIl9jNSIsIkNUQSIsIl9jNiIsIkZvb3RlciIsIl9jNyIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIkF1cmFBcHAudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgTGluayB9IGZyb20gJ3JlYWN0LXJvdXRlcic7XG5pbXBvcnQgeyBBbmltYXRlUHJlc2VuY2UsIG1vdGlvbiB9IGZyb20gJ21vdGlvbi9yZWFjdCc7XG5pbXBvcnQge1xuICBBcnJvd1VwUmlnaHQsXG4gIENoZWNrQ2lyY2xlMixcbiAgRGF0YWJhc2UsXG4gIExheW91dEdyaWQsXG4gIE1lbnUsXG4gIFBhaW50YnJ1c2gsXG4gIFN0YXIsXG4gIFgsXG59IGZyb20gJ2x1Y2lkZS1yZWFjdCc7XG5pbXBvcnQgeyBJbWFnZVdpdGhGYWxsYmFjayB9IGZyb20gJy4vZmlnbWEvSW1hZ2VXaXRoRmFsbGJhY2snO1xuaW1wb3J0IHsgU0lURV9MSU5LUyB9IGZyb20gJy4uL3NpdGUnO1xuXG5leHBvcnQgZnVuY3Rpb24gTmF2YmFyKCkge1xuICBjb25zdCBbaXNNZW51T3Blbiwgc2V0SXNNZW51T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBkb2N1bWVudC5ib2R5LnN0eWxlLm92ZXJmbG93ID0gaXNNZW51T3BlbiA/ICdoaWRkZW4nIDogJyc7XG5cbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9ICcnO1xuICAgIH07XG4gIH0sIFtpc01lbnVPcGVuXSk7XG5cbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLm5hdlxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAtMTQsIGZpbHRlcjogJ2JsdXIoMTBweCknIH19XG4gICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAsIGZpbHRlcjogJ2JsdXIoMHB4KScgfX1cbiAgICAgIGV4aXQ9e3sgb3BhY2l0eTogMCwgeTogLTE0LCBmaWx0ZXI6ICdibHVyKDEwcHgpJyB9fVxuICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC4zNCwgZWFzZTogWzAuMTYsIDEsIDAuMywgMV0gfX1cbiAgICAgIGNsYXNzTmFtZT1cImZpeGVkIGxlZnQtMCByaWdodC0wIHRvcC0wIHotNTAgcHgtNCBweS00IG1kOnB4LTZcIlxuICAgID5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byBmbGV4IG1heC13LVs4NXJlbV0gaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNCByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIvNzAgYmctYnJhbmQtZGFyay83OCBweC00IHB5LTMgdGV4dC1icmFuZC1jcmVtZSBzaGFkb3ctWzBfMTZweF80OHB4X3JnYmEoMCwwLDAsMC4yOCldIGJhY2tkcm9wLWJsdXItbWQgbWQ6cHgtNVwiPlxuICAgICAgICA8TGlua1xuICAgICAgICAgIHRvPVwiL1wiXG4gICAgICAgICAgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgdGV4dC14bCBmb250LXNlbWlib2xkIHRyYWNraW5nLXRpZ2h0ZXIgdGV4dC1icmFuZC1jcmVtZVwiXG4gICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0SXNNZW51T3BlbihmYWxzZSl9XG4gICAgICAgID5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImgtNiB3LTYgcm91bmRlZC1mdWxsIGJnLWdyYWRpZW50LXRvLXRyIGZyb20tYnJhbmQtYWNjZW50IHRvLWJyYW5kLWFjY2VudC1hbHRcIiAvPlxuICAgICAgICAgIEF1cmFcbiAgICAgICAgPC9MaW5rPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhpZGRlbiBpdGVtcy1jZW50ZXIgZ2FwLTggdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLW11dGVkIG1kOmZsZXhcIj5cbiAgICAgICAgICA8TGluayB0bz17U0lURV9MSU5LUy5zZXJ2aWNlc30gY2xhc3NOYW1lPVwidHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6dGV4dC1icmFuZC1jcmVtZVwiPlxuICAgICAgICAgICAgTGVhZCBFbmdpbmVcbiAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPExpbmsgdG89e1NJVEVfTElOS1Mud29ya30gY2xhc3NOYW1lPVwidHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6dGV4dC1icmFuZC1jcmVtZVwiPlxuICAgICAgICAgICAgV29ya2Zsb3dcbiAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPExpbmsgdG89e1NJVEVfTElOS1MuYWJvdXR9IGNsYXNzTmFtZT1cInRyYW5zaXRpb24tY29sb3JzIGhvdmVyOnRleHQtYnJhbmQtY3JlbWVcIj5cbiAgICAgICAgICAgIEFib3V0XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtM1wiPlxuICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICB0bz17U0lURV9MSU5LUy5ib29rRGVtb31cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImhpZGRlbiBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLXN1cmZhY2UgcHgtNSBweS0yLjUgdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLWNyZW1lIHRyYW5zaXRpb24tYWxsIGhvdmVyOmJnLWJyYW5kLWJvcmRlciBtZDppbmxpbmUtZmxleFwiXG4gICAgICAgICAgPlxuICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgICA8QXJyb3dVcFJpZ2h0IHNpemU9ezE0fSAvPlxuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IGgtMTEgdy0xMSBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLXN1cmZhY2UgdGV4dC1icmFuZC1jcmVtZSBtZDpoaWRkZW5cIlxuICAgICAgICAgICAgYXJpYS1leHBhbmRlZD17aXNNZW51T3Blbn1cbiAgICAgICAgICAgIGFyaWEtY29udHJvbHM9XCJtb2JpbGUtbmF2aWdhdGlvblwiXG4gICAgICAgICAgICBhcmlhLWxhYmVsPXtpc01lbnVPcGVuID8gJ0Nsb3NlIG5hdmlnYXRpb24gbWVudScgOiAnT3BlbiBuYXZpZ2F0aW9uIG1lbnUnfVxuICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0SXNNZW51T3Blbigob3BlbikgPT4gIW9wZW4pfVxuICAgICAgICAgID5cbiAgICAgICAgICAgIHtpc01lbnVPcGVuID8gPFggc2l6ZT17MTh9IC8+IDogPE1lbnUgc2l6ZT17MTh9IC8+fVxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8QW5pbWF0ZVByZXNlbmNlPlxuICAgICAgICB7aXNNZW51T3BlbiA/IChcbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgaWQ9XCJtb2JpbGUtbmF2aWdhdGlvblwiXG4gICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IC0xMiB9fVxuICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICAgICAgICBleGl0PXt7IG9wYWNpdHk6IDAsIHk6IC0xMiB9fVxuICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC4yIH19XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJteC1hdXRvIG10LTQgbWF4LXctWzg1cmVtXSByb3VuZGVkLVsxLjlyZW1dIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLWRhcmsvOTUgcC01IHRleHQtYnJhbmQtY3JlbWUgc2hhZG93LTJ4bCBzaGFkb3ctYmxhY2svMzAgYmFja2Ryb3AtYmx1clwiXG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIGdhcC0zIHRleHQtc20gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTJlbV1cIj5cbiAgICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgICB0bz17U0lURV9MSU5LUy5zZXJ2aWNlc31cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyb3VuZGVkLTJ4bCBweC00IHB5LTMgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6YmctYnJhbmQtc3VyZmFjZVwiXG4gICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0SXNNZW51T3BlbihmYWxzZSl9XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICBMZWFkIEVuZ2luZVxuICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICAgICAgdG89e1NJVEVfTElOS1Mud29ya31cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyb3VuZGVkLTJ4bCBweC00IHB5LTMgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6YmctYnJhbmQtc3VyZmFjZVwiXG4gICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0SXNNZW51T3BlbihmYWxzZSl9XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICBXb3JrZmxvd1xuICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICAgICAgdG89e1NJVEVfTElOS1MuYWJvdXR9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicm91bmRlZC0yeGwgcHgtNCBweS0zIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJnLWJyYW5kLXN1cmZhY2VcIlxuICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldElzTWVudU9wZW4oZmFsc2UpfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgQWJvdXRcbiAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICA8TGlua1xuICAgICAgICAgICAgICAgIHRvPXtTSVRFX0xJTktTLmJvb2tEZW1vfVxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cIm10LTIgaW5saW5lLWZsZXgganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIGJnLWJyYW5kLWNyZW1lIHB4LTUgcHktMyB0ZXh0LWJyYW5kLWRhcmsgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6Ymctd2hpdGVcIlxuICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldElzTWVudU9wZW4oZmFsc2UpfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgKSA6IG51bGx9XG4gICAgICA8L0FuaW1hdGVQcmVzZW5jZT5cbiAgICA8L21vdGlvbi5uYXY+XG4gICk7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBIZXJvKCkge1xuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInJlbGF0aXZlIGlzb2xhdGUgbWluLWgtc2NyZWVuIG92ZXJmbG93LWhpZGRlbiBweC02IHBiLTIwIHB0LTI4IHRleHQtY2VudGVyIG1kOnBiLTI0IG1kOnB0LTMyXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgaW5zZXQtMCBiZy1bcmFkaWFsLWdyYWRpZW50KGNpcmNsZV9hdF81MCVfMTglLHJnYmEoOTYsMTM1LDE3NiwwLjE2KSx0cmFuc3BhcmVudF8yMyUpLHJhZGlhbC1ncmFkaWVudChjaXJjbGVfYXRfMjYlXzYyJSxyZ2JhKDI1NSwxMDcsNTMsMC4wOCksdHJhbnNwYXJlbnRfMTglKSxsaW5lYXItZ3JhZGllbnQoMTgwZGVnLHJnYmEoMjU1LDI1NSwyNTUsMC4wMiksdHJhbnNwYXJlbnRfMjglKV1cIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LTAgYmctW3JhZGlhbC1ncmFkaWVudChjaXJjbGVfYXRfY2VudGVyLHJnYmEoNCw5LDE4LDApXzM2JSxyZ2JhKDQsOSwxOCwwLjM4KV83MiUscmdiYSgzLDMsNSwwLjg2KV8xMDAlKV1cIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LTAgYmctW2xpbmVhci1ncmFkaWVudChyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpXzFweCx0cmFuc3BhcmVudF8xcHgpLGxpbmVhci1ncmFkaWVudCg5MGRlZyxyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpXzFweCx0cmFuc3BhcmVudF8xcHgpXSBiZy1bc2l6ZTo3cmVtXzdyZW1dIG9wYWNpdHktWzAuMDM1XVwiIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgaW5zZXQtMCBiZy1bbGluZWFyLWdyYWRpZW50KDE4MGRlZyxyZ2JhKDMsMyw1LDAuMTIpLHJnYmEoMywzLDUsMC4zNClfNTQlLHJnYmEoMywzLDUsMC45MilfMTAwJSldXCIgLz5cblxuICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyNCB9fVxuICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC44LCBlYXNlOiBbMC4xNiwgMSwgMC4zLCAxXSB9fVxuICAgICAgICBjbGFzc05hbWU9XCJyZWxhdGl2ZSB6LTEwIG14LWF1dG8gZmxleCBtYXgtdy1bNjhyZW1dIGZsZXgtY29sIGl0ZW1zLWNlbnRlclwiXG4gICAgICA+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNyBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyLzgwIGJnLWJyYW5kLXN1cmZhY2UvNzAgcHgtMyBweS0xLjUgdGV4dC14cyBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLW11dGVkIGJhY2tkcm9wLWJsdXItbWRcIj5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoLTIgdy0yIGFuaW1hdGUtcHVsc2Ugcm91bmRlZC1mdWxsIGJnLVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXVwiIC8+XG4gICAgICAgICAgQ3VzdG9tIEFJIFdvcmtmbG93c1xuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8aDEgY2xhc3NOYW1lPVwibXgtYXV0byBtYi02IG1heC13LVsxOWNoXSB0ZXh0LWJhbGFuY2UgdGV4dC1bOS42dnddIGZvbnQtc2VtaWJvbGQgbGVhZGluZy1bMC45OF0gdHJhY2tpbmctdGlnaHRlciB0ZXh0LWJyYW5kLWNyZW1lIGRyb3Atc2hhZG93LVswXzEwcHhfNDBweF9yZ2JhKDAsMCwwLDAuMzUpXSBtZDptYXgtdy1bMThjaF0gbWQ6dGV4dC1bNnZ3XVwiPlxuICAgICAgICAgIEN1c3RvbSBhdXRvbWF0aW9uIHdvcmtmbG93cyBwb3dlcmVkIGJ5eycgJ31cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJiZy1ncmFkaWVudC10by1yIGZyb20tW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldIHRvLVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQtYWx0KV0gYmctY2xpcC10ZXh0IHRleHQtdHJhbnNwYXJlbnRcIj5cbiAgICAgICAgICAgIEFJIGFnZW50c1xuICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAuXG4gICAgICAgIDwvaDE+XG5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibWItOSBtYXgtdy0yeGwgdGV4dC1sZyBmb250LW1lZGl1bSBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1icmFuZC1tdXRlZCBkcm9wLXNoYWRvdy1bMF8xMHB4XzMwcHhfcmdiYSgwLDAsMCwwLjI4KV0gbWQ6dGV4dC14bFwiPlxuICAgICAgICAgIEF1cmEgYnVpbGRzIGN1c3RvbSBhdXRvbWF0aW9uIHdvcmtmbG93cyBmb3IgcmVhbCBlc3RhdGUgZmlybXMgYW5kIGludGVyaW9yIGRlc2lnbiBzdHVkaW9zIHRoYXQgbmVlZCBmYXN0ZXJcbiAgICAgICAgICBxdWFsaWZpY2F0aW9uLCBjbGVhbmVyIHJvdXRpbmcsIGFuZCBtb3JlIGNvbnNpc3RlbnQgZm9sbG93LXVwLlxuICAgICAgICA8L3A+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtNCBzbTpmbGV4LXJvd1wiPlxuICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICB0bz17U0lURV9MSU5LUy5zZXJ2aWNlc31cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImdyb3VwIGZsZXggdy1mdWxsIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMyByb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldIHB4LTggcHktNCBmb250LW1lZGl1bSB0ZXh0LXdoaXRlIHRyYW5zaXRpb24tYWxsIGhvdmVyOmJnLW9wYWNpdHktOTAgc206dy1hdXRvXCJcbiAgICAgICAgICA+XG4gICAgICAgICAgICBTZWUgV2hhdCBXZSBCdWlsZFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLWZ1bGwgYmctd2hpdGUvMjAgcC0xLjUgdHJhbnNpdGlvbi1jb2xvcnMgZ3JvdXAtaG92ZXI6Ymctd2hpdGUgZ3JvdXAtaG92ZXI6dGV4dC1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV1cIj5cbiAgICAgICAgICAgICAgPEFycm93VXBSaWdodCBzaXplPXsxNn0gLz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8TGlua1xuICAgICAgICAgICAgdG89e1NJVEVfTElOS1Mud29ya31cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImdyb3VwIGZsZXggdy1mdWxsIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMyByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIgYmctYnJhbmQtc3VyZmFjZSBweC04IHB5LTQgZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZSB0cmFuc2l0aW9uLWFsbCBob3ZlcjpiZy1icmFuZC1ib3JkZXIgc206dy1hdXRvXCJcbiAgICAgICAgICA+XG4gICAgICAgICAgICBWaWV3IFdvcmtmbG93XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvbW90aW9uLmRpdj5cblxuICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiA0MCB9fVxuICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMSwgZGVsYXk6IDAuMjIsIGVhc2U6IFswLjE2LCAxLCAwLjMsIDFdIH19XG4gICAgICAgIGNsYXNzTmFtZT1cInJlbGF0aXZlIHotMTAgbXgtYXV0byBtdC0xNiB3LWZ1bGwgbWF4LXctWzc0cmVtXSBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMi43NXJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIvNzAgYmctYnJhbmQtc3VyZmFjZSBzaGFkb3ctWzBfMjhweF8xMDBweF9yZ2JhKDAsMCwwLDAuNDUpXVwiXG4gICAgICA+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgZmxleCBoLTE0IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gYm9yZGVyLWIgYm9yZGVyLWJyYW5kLWJvcmRlci81MCBiZy1icmFuZC1kYXJrLzY1IHB4LTYgYmFja2Ryb3AtYmx1ci1zbVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTJcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaC0zIHctMyByb3VuZGVkLWZ1bGwgYmctcmVkLTUwMC84MFwiIC8+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImgtMyB3LTMgcm91bmRlZC1mdWxsIGJnLXllbGxvdy01MDAvODBcIiAvPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoLTMgdy0zIHJvdW5kZWQtZnVsbCBiZy1ncmVlbi01MDAvODBcIiAvPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIGl0ZW1zLWNlbnRlciBnYXAtMiByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIvODAgYmctYnJhbmQtc3VyZmFjZS84MCBweC0zIHB5LTEgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMmVtXSB0ZXh0LWJyYW5kLW11dGVkIG1kOmZsZXhcIj5cbiAgICAgICAgICAgIFJvdXRpbmcgbGl2ZVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGgtWzIwcmVtXSBtZDpoLVsyOXJlbV1cIj5cbiAgICAgICAgICA8SW1hZ2VXaXRoRmFsbGJhY2tcbiAgICAgICAgICAgIHNyYz1cImh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNjAwNTg1MTU0MzQwLWJlNjE2MWE1NmEwYz9xPTgwJnc9MTA4MFwiXG4gICAgICAgICAgICBhbHQ9XCJBcmNoaXRlY3R1cmUgRGFzaGJvYXJkXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgaC1mdWxsIHctZnVsbCBvYmplY3QtY292ZXIgb3BhY2l0eS0yNCBncmF5c2NhbGVcIlxuICAgICAgICAgIC8+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIGJnLVtyYWRpYWwtZ3JhZGllbnQoY2lyY2xlX2F0X2NlbnRlcixyZ2JhKDE2MiwxMjAsMTgyLDAuMTEpLHRyYW5zcGFyZW50XzI4JSldXCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgYmctW2xpbmVhci1ncmFkaWVudCgxODBkZWcscmdiYSg1LDgsMTQsMC4yKSxyZ2JhKDUsOCwxNCwwLjcyKV81NiUscmdiYSg1LDgsMTQsMC45NClfMTAwJSldXCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgYmctW2xpbmVhci1ncmFkaWVudChyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpXzFweCx0cmFuc3BhcmVudF8xcHgpLGxpbmVhci1ncmFkaWVudCg5MGRlZyxyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpXzFweCx0cmFuc3BhcmVudF8xcHgpXSBiZy1bc2l6ZTo3cmVtXzdyZW1dIG9wYWNpdHktWzAuMTFdXCIgLz5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgcmlnaHQtNSB0b3AtNSByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIvODAgYmctYnJhbmQtZGFyay84MCBweC0zIHB5LTEuNSB0ZXh0LVsxMHB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xOGVtXSB0ZXh0LWJyYW5kLW11dGVkIG1kOnJpZ2h0LTYgbWQ6dG9wLTZcIj5cbiAgICAgICAgICAgIDcgbGVhZHMgcmVhZHkgZm9yIGhhbmRvZmZcbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQteC01IGJvdHRvbS01IGdyaWQgZ2FwLTQgbWQ6Z3JpZC1jb2xzLVsxLjIyZnJfMC43OGZyXSBtZDppbnNldC14LTYgbWQ6Ym90dG9tLTZcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm91bmRlZC1bMS44cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci84MCBiZy1icmFuZC1kYXJrLzc4IHAtNSBzaGFkb3ctWzBfMjBweF81MHB4X3JnYmEoMCwwLDAsMC4zKV0gYmFja2Ryb3AtYmx1ci1tZCBtZDpwLTZcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0zXCI+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgTGVhZCB2ZWxvY2l0eVxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTIgdGV4dC14bCBmb250LW1lZGl1bSB0cmFja2luZy10aWdodCB0ZXh0LWJyYW5kLWNyZW1lXCI+XG4gICAgICAgICAgICAgICAgICAgIE5vcnRobGluZSBwb3J0Zm9saW9cbiAgICAgICAgICAgICAgICAgIDwvaDM+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldLzI1IGJnLVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXS8xMCBweC0zIHB5LTEgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV1cIj5cbiAgICAgICAgICAgICAgICAgIFByaW9yaXR5IGlucXVpcnkgZGV0ZWN0ZWRcbiAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiBncmlkIGdyaWQtY29scy0zIGdhcC00XCI+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE2ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgTmV3IGlucXVpcmllc1xuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMiB0ZXh0LVsycmVtXSBmb250LXNlbWlib2xkIHRyYWNraW5nLXRpZ2h0ZXIgdGV4dC1icmFuZC1jcmVtZVwiPjIsNDA1PC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsxMHB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNmVtXSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgIFF1YWxpZmllZFxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMiB0ZXh0LVsycmVtXSBmb250LXNlbWlib2xkIHRyYWNraW5nLXRpZ2h0ZXIgdGV4dC1icmFuZC1jcmVtZVwiPjMxODwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICAgICAgICBSZXNwb25zZSBsYWdcbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTIgdGV4dC1bMnJlbV0gZm9udC1zZW1pYm9sZCB0cmFja2luZy10aWdodGVyIHRleHQtYnJhbmQtY3JlbWVcIj40bTwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC01IGgtMS41IG92ZXJmbG93LWhpZGRlbiByb3VuZGVkLWZ1bGwgYmctYmxhY2svNDBcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImgtZnVsbCB3LVs3MiVdIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1yIGZyb20tW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldIHZpYS1bdmFyKC0tY29sb3ItYnJhbmQtYWNjZW50LWFsdCldIHRvLVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXVwiIC8+XG4gICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNCBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIgZ2FwLXgtNSBnYXAteS0yIHRleHQtc20gdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICAgIDxzcGFuPlBvcnRhbCArIHdlYiBmb3JtcyBzeW5jZWQ8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiaGlkZGVuIGgtNCB3LXB4IGJnLWJyYW5kLWJvcmRlci83MCBtZDpibG9ja1wiIC8+XG4gICAgICAgICAgICAgICAgPHNwYW4+VXJnZW5jeSBzdXJmYWNlZCBpbnN0YW50bHk8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiaGlkZGVuIGgtNCB3LXB4IGJnLWJyYW5kLWJvcmRlci83MCBtZDpibG9ja1wiIC8+XG4gICAgICAgICAgICAgICAgPHNwYW4+T3duZXJzaGlwIGFzc2lnbmVkIGJlZm9yZSBmb2xsb3ctdXAgc3RhbGxzPC9zcGFuPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuOHJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIvODAgYmctYnJhbmQtZGFyay84NCBwLTUgc2hhZG93LVswXzIwcHhfNTBweF9yZ2JhKDAsMCwwLDAuMyldIGJhY2tkcm9wLWJsdXItbWQgbWQ6cC02XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMThlbV0gdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICAgICAgUm91dGluZyBub3dcbiAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiaC0yLjUgdy0yLjUgYW5pbWF0ZS1wdWxzZSByb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldXCIgLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC00IHNwYWNlLXktMyB0ZXh0LXNtIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC00IGJvcmRlci1iIGJvcmRlci1icmFuZC1ib3JkZXIvNjAgcGItM1wiPlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZVwiPlBlbnRob3VzZSBpbnF1aXJ5PC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIHRleHQteHNcIj5CdWRnZXQgYW5kIG1vdmUtaW4gd2luZG93IGNhcHR1cmVkPC9wPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJyb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldLzEyIHB4LTIuNSBweS0xIHRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE0ZW1dIHRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldXCI+XG4gICAgICAgICAgICAgICAgICAgIFNjb3JlZFxuICAgICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLXN0YXJ0IGp1c3RpZnktYmV0d2VlbiBnYXAtNCBib3JkZXItYiBib3JkZXItYnJhbmQtYm9yZGVyLzYwIHBiLTNcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtbWVkaXVtIHRleHQtYnJhbmQtY3JlbWVcIj5DaGVsc2VhIHNob3dyb29tPC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIHRleHQteHNcIj5EZXNpZ24gY29uc3VsdGF0aW9uIHJlcXVlc3QgdmFsaWRhdGVkPC9wPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJyb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudC1hbHQpXS8xMiBweC0yLjUgcHktMSB0ZXh0LVsxMHB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNGVtXSB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQtYWx0KV1cIj5cbiAgICAgICAgICAgICAgICAgICAgUmVhZHlcbiAgICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWJldHdlZW4gZ2FwLTRcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtbWVkaXVtIHRleHQtYnJhbmQtY3JlbWVcIj5OZXh0IGFjdGlvbjwvcD5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXhzXCI+QXNzaWduZWQgdG8gSnVsaWFuLCBDUk0gdXBkYXRlZCwgZm9sbG93LXVwIHF1ZXVlZDwvcD5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPEFycm93VXBSaWdodCBzaXplPXsxNn0gY2xhc3NOYW1lPVwibXQtMSB0ZXh0LWJyYW5kLWNyZW1lXCIgLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L21vdGlvbi5kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gRmVhdHVyZXMoKSB7XG4gIGNvbnN0IG9wZXJhdGlvbnMgPSBbXG4gICAge1xuICAgICAgbWFya2VyOiAnMDEnLFxuICAgICAgdGl0bGU6ICdMZWFkIENhcHR1cmUnLFxuICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICdQdWxsIGZvcm1zLCBlbWFpbCwgV2hhdHNBcHAsIGFuZCBsaXN0aW5nIHBvcnRhbHMgaW50byBvbmUgaW50YWtlIHdvcmtmbG93IHdpdGggY2xlYW4gcmVjb3JkcyBmcm9tIHRoZSBmaXJzdCB0b3VjaC4nLFxuICAgIH0sXG4gICAge1xuICAgICAgbWFya2VyOiAnMDInLFxuICAgICAgdGl0bGU6ICdBZ2VudGljIFF1YWxpZmljYXRpb24nLFxuICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICdBSSBhZ2VudHMgcmVhZCBjb250ZXh0LCBzY29yZSBpbnRlbnQsIGFuZCBzdXJmYWNlIHdoaWNoIG9wcG9ydHVuaXRpZXMgbmVlZCBpbW1lZGlhdGUgaHVtYW4gZm9sbG93LXVwLicsXG4gICAgfSxcbiAgICB7XG4gICAgICBtYXJrZXI6ICcwMycsXG4gICAgICB0aXRsZTogJ1BpcGVsaW5lIEhhbmRvZmYnLFxuICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICdSb3V0ZSBxdWFsaWZpZWQgb3Bwb3J0dW5pdGllcyB0byB0aGUgcmlnaHQgYWdlbnQsIHN0dWRpbyBsZWFkLCBvciBmb2xsb3ctdXAgd29ya2Zsb3cgd2l0aG91dCBtYW51YWwgcmVhc3NpZ25tZW50LicsXG4gICAgfSxcbiAgXTtcblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGlkPVwic2VydmljZXNcIiBjbGFzc05hbWU9XCJyZWxhdGl2ZSB6LTEwIGJnLWJyYW5kLWRhcmsgcHgtNiBweS0yMCBtZDpweS0yNFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJteC1hdXRvIG1heC13LVs4NXJlbV1cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYi0xNiBmbGV4IGZsZXgtY29sIGp1c3RpZnktYmV0d2VlbiBnYXAtOCBtZDpmbGV4LXJvdyBtZDppdGVtcy1lbmRcIj5cbiAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwibWF4LXctMnhsIHRleHQtNHhsIGZvbnQtbWVkaXVtIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHRlciB0ZXh0LWJyYW5kLWNyZW1lIG1kOnRleHQtWzIuODVyZW1dIGxnOnRleHQtWzMuNTVyZW1dXCI+XG4gICAgICAgICAgICBBdXRvbWF0aW9uIHdvcmtmbG93cyBmb3IgPGJyIGNsYXNzTmFtZT1cImhpZGRlbiBtZDpibG9ja1wiIC8+IHRlYW1zIHdoZXJlIHNwZWVkIGNsb3NlcyBkZWFscy5cbiAgICAgICAgICA8L2gyPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm1heC13LW1kIHRleHQtbGcgZm9udC1tZWRpdW0gbGVhZGluZy1yZWxheGVkIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgIENhcHR1cmUgZXZlcnkgaW5xdWlyeSwgcXVhbGlmeSBpbnRlbnQgaW5zdGFudGx5LCBhbmQgcm91dGUgdGhlIG5leHQgc3RlcCBhY3Jvc3Mgc2FsZXMgYW5kIGRlc2lnbiB3aXRob3V0XG4gICAgICAgICAgICBtYW51YWwgY2hhc2luZy5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMSBnYXAtNiBsZzpncmlkLWNvbHMtWzEuMThmcl8wLjgyZnJdXCI+XG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIHdoaWxlSG92ZXI9e3sgeTogLTUgfX1cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImdyb3VwIHJlbGF0aXZlIGZsZXggbWluLWgtWzIzcmVtXSBmbGV4LWNvbCBqdXN0aWZ5LWJldHdlZW4gb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtWzIuNXJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1bIzEzMUIyRl0gdG8tWyMwQTBGMUFdIHAtOCBtZDpwLTEwXCJcbiAgICAgICAgICA+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIHJpZ2h0LTAgdG9wLTAgaC1bMzgwcHhdIHctWzM4MHB4XSB0cmFuc2xhdGUteC0xLzIgLXRyYW5zbGF0ZS15LTEvMiByb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldLzEwIGJsdXItWzg0cHhdXCIgLz5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSB6LTEwIGZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC02XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBoLTE0IHctMTQgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBiZy1icmFuZC1kYXJrIHRleHQtYnJhbmQtY3JlbWVcIj5cbiAgICAgICAgICAgICAgICA8TGF5b3V0R3JpZCBzaXplPXsyNH0gLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyLzgwIGJnLWJyYW5kLXN1cmZhY2UvNzAgcHgtMyBweS0xIHRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICBWaXNpYmlsaXR5IGxheWVyXG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgei0xMCBtdC1hdXRvIG1heC13LXhsXCI+XG4gICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtYi00IHRleHQtWzEuODVyZW1dIGZvbnQtbWVkaXVtIHRyYWNraW5nLXRpZ2h0IHRleHQtYnJhbmQtY3JlbWUgbWQ6dGV4dC1bMi4yNXJlbV1cIj5cbiAgICAgICAgICAgICAgICBBSSBMZWFkIENvbnNvbGVcbiAgICAgICAgICAgICAgPC9oMz5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1sZyBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICAgIFRyYWNrIGV2ZXJ5IGlucXVpcnksIHNjb3JlIHVyZ2VuY3ksIGFuZCBhc3NpZ24gbmV4dC1zdGVwIG93bmVyc2hpcCBpbiBvbmUgd29ya2Zsb3cgdmlldyBidWlsdCBmb3JcbiAgICAgICAgICAgICAgICBmYXN0LW1vdmluZyBwcm9wZXJ0eSB0ZWFtcy5cbiAgICAgICAgICAgICAgPC9wPlxuXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtOCBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIgZ2FwLXgtNCBnYXAteS0yIGJvcmRlci10IGJvcmRlci1icmFuZC1ib3JkZXIvNzAgcHQtNCB0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xOGVtXSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4+VXJnZW5jeSBzY29yaW5nIGxpdmU8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiaGlkZGVuIGgtNCB3LXB4IGJnLWJyYW5kLWJvcmRlci83MCBtZDpibG9ja1wiIC8+XG4gICAgICAgICAgICAgICAgPHNwYW4+TmV4dC1zdGVwIG93bmVyc2hpcCB2aXNpYmxlPC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbiBoLTQgdy1weCBiZy1icmFuZC1ib3JkZXIvNzAgbWQ6YmxvY2tcIiAvPlxuICAgICAgICAgICAgICAgIDxzcGFuPkNoYW5uZWxzIHVuaWZpZWQ8L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgYm90dG9tLTggcmlnaHQtOCB0cmFuc2xhdGUteC00IG9wYWNpdHktMCB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXSB0cmFuc2l0aW9uLWFsbCBncm91cC1ob3Zlcjp0cmFuc2xhdGUteC0wIGdyb3VwLWhvdmVyOm9wYWNpdHktMTAwXCI+XG4gICAgICAgICAgICAgIDxBcnJvd1VwUmlnaHQgc2l6ZT17MzB9IC8+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgd2hpbGVIb3Zlcj17eyB5OiAtNSB9fVxuICAgICAgICAgICAgY2xhc3NOYW1lPVwiZ3JvdXAgcmVsYXRpdmUgZmxleCBtaW4taC1bMjNyZW1dIGZsZXgtY29sIGp1c3RpZnktYmV0d2VlbiBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMi41cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBwLThcIlxuICAgICAgICAgID5cbiAgICAgICAgICAgIDxJbWFnZVdpdGhGYWxsYmFja1xuICAgICAgICAgICAgICBzcmM9XCJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYxODIyMTE5NTcxMC1kZDZiNDFmYWFlYTY/cT04MCZ3PTEwODBcIlxuICAgICAgICAgICAgICBhbHQ9XCJJbnRlcmlvciBEZXRhaWxcIlxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIGgtZnVsbCB3LWZ1bGwgb2JqZWN0LWNvdmVyIG9wYWNpdHktNDAgZ3JheXNjYWxlIHRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTcwMCBlYXNlLW91dCBncm91cC1ob3ZlcjpzY2FsZS0xMDVcIlxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by1iIGZyb20tdHJhbnNwYXJlbnQgdmlhLWJyYW5kLWRhcmsvNDUgdG8tYnJhbmQtZGFya1wiIC8+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgei0xMCBmbGV4IGl0ZW1zLXN0YXJ0IGp1c3RpZnktYmV0d2VlbiBnYXAtNFwiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaC0xMiB3LTEyIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci13aGl0ZS8yMCBiZy13aGl0ZS8xMCB0ZXh0LXdoaXRlIGJhY2tkcm9wLWJsdXItbWRcIj5cbiAgICAgICAgICAgICAgICA8UGFpbnRicnVzaCBzaXplPXsyMH0gLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItd2hpdGUvMTUgYmctYnJhbmQtZGFyay81NSBweC0zIHB5LTEgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMThlbV0gdGV4dC13aGl0ZS83MFwiPlxuICAgICAgICAgICAgICAgIEZpdCBzY3JlZW5pbmdcbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSB6LTEwIG10LWF1dG8gbWF4LXctc21cIj5cbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm1iLTIgdGV4dC1bMS42NXJlbV0gZm9udC1tZWRpdW0gdHJhY2tpbmctdGlnaHQgdGV4dC13aGl0ZVwiPkRlc2lnbiBJbnRha2UgQWdlbnQ8L2gzPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJsZWFkaW5nLXJlbGF4ZWQgdGV4dC13aGl0ZS83MlwiPlxuICAgICAgICAgICAgICAgIFNjcmVlbiBjb25zdWx0YXRpb24gcmVxdWVzdHMgZm9yIHByb2plY3QgZml0LCBidWRnZXQsIGFuZCB0aW1lbGluZSBiZWZvcmUgeW91ciB0ZWFtIHNwZW5kcyB0aW1lIG9uXG4gICAgICAgICAgICAgICAgY2FsbHMuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC0xMCBib3JkZXIteSBib3JkZXItYnJhbmQtYm9yZGVyLzgwXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zXCI+XG4gICAgICAgICAgICB7b3BlcmF0aW9ucy5tYXAoKG9wZXJhdGlvbiwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgPGRpdiBrZXk9e29wZXJhdGlvbi50aXRsZX0gY2xhc3NOYW1lPVwicHgtMCBweS04IG1kOnB4LTggbWQ6cHktMTBcIj5cbiAgICAgICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BoLWZ1bGwgJHtcbiAgICAgICAgICAgICAgICAgICAgaW5kZXggPT09IDAgPyAnJyA6ICdib3JkZXItdCBib3JkZXItYnJhbmQtYm9yZGVyLzcwIHB0LTggbWQ6Ym9yZGVyLXQtMCBtZDpwdC0wJ1xuICAgICAgICAgICAgICAgICAgfSAke2luZGV4IDwgb3BlcmF0aW9ucy5sZW5ndGggLSAxID8gJ21kOmJvcmRlci1yIG1kOmJvcmRlci1icmFuZC1ib3JkZXIvNzAgbWQ6cHItOCcgOiAnJ31gfVxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1zbSBmb250LWxpZ2h0IHRyYWNraW5nLVswLjJlbV0gdGV4dC1icmFuZC1tdXRlZFwiPntvcGVyYXRpb24ubWFya2VyfTwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTQgdGV4dC1bMS41cmVtXSBmb250LW1lZGl1bSB0cmFja2luZy10aWdodCB0ZXh0LWJyYW5kLWNyZW1lXCI+e29wZXJhdGlvbi50aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMyBtYXgtdy1zbSB0ZXh0LXNtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LWJyYW5kLW11dGVkXCI+e29wZXJhdGlvbi5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gU2hvd2Nhc2UoKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJ3b3JrXCIgY2xhc3NOYW1lPVwicmVsYXRpdmUgYm9yZGVyLXQgYm9yZGVyLWJyYW5kLWJvcmRlciBweC02IHB5LTI0IG1kOnB5LTI4XCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm14LWF1dG8gbWF4LXctWzg1cmVtXVwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgaXRlbXMtY2VudGVyIGdhcC0xNiBsZzpncmlkLWNvbHMtWzAuODRmcl8xLjE2ZnJdIGxnOmdhcC0xMFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXcteGxcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNiBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJnLVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXS8xMCBweC0zIHB5LTEuNSB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIHRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldXCI+XG4gICAgICAgICAgICAgIDxTdGFyIHNpemU9ezEyfSBmaWxsPVwiY3VycmVudENvbG9yXCIgLz4gQWdlbnRpYyBXb3JrZmxvd1xuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwibWItNiB0ZXh0LTR4bCBmb250LW1lZGl1bSBsZWFkaW5nLVsxLjA4XSB0cmFja2luZy10aWdodGVyIHRleHQtYnJhbmQtY3JlbWUgbWQ6dGV4dC1bMy4zcmVtXVwiPlxuICAgICAgICAgICAgICBBSSB3b3JrZmxvd3MgdGhhdCBrZWVwIGxlYWQgbW9tZW50dW0gbW92aW5nLlxuICAgICAgICAgICAgPC9oMj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm1iLTEwIHRleHQtbGcgbGVhZGluZy1yZWxheGVkIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgRnJvbSBmaXJzdCBpbnF1aXJ5IHRvIGJvb2tlZCBjYWxsLCBBSSBhZ2VudHMgcXVhbGlmeSBkZW1hbmQsIHRyaWdnZXIgZm9sbG93LXVwLCBhbmQgcHVzaCB0aGUgcmlnaHQgbmV4dFxuICAgICAgICAgICAgICBhY3Rpb24gdG8geW91ciB0ZWFtLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgdG89e1NJVEVfTElOS1MuYm9va0RlbW99XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IHJvdW5kZWQtZnVsbCBiZy1icmFuZC1jcmVtZSBweC04IHB5LTQgZm9udC1tZWRpdW0gdGV4dC1icmFuZC1kYXJrIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJnLXdoaXRlXCJcbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIG1pbi1oLVszNHJlbV0gb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtWzIuNjVyZW1dIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLVtyYWRpYWwtZ3JhZGllbnQoY2lyY2xlX2F0XzU1JV8yNCUscmdiYSgxNDgsMTE5LDE3MSwwLjEyKSx0cmFuc3BhcmVudF8yMCUpLGxpbmVhci1ncmFkaWVudCgxODBkZWcsIzBjMTIyMF8wJSwjMDkwYzE0XzEwMCUpXSBwLTUgc2hhZG93LVswXzI4cHhfOTBweF9yZ2JhKDAsMCwwLDAuMzUpXSBtZDpwLTZcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9pbnRlci1ldmVudHMtbm9uZSBhYnNvbHV0ZSBpbnNldC0wIGJnLVtsaW5lYXItZ3JhZGllbnQocmdiYSgyNTUsMjU1LDI1NSwwLjAzKV8xcHgsdHJhbnNwYXJlbnRfMXB4KSxsaW5lYXItZ3JhZGllbnQoOTBkZWcscmdiYSgyNTUsMjU1LDI1NSwwLjAzKV8xcHgsdHJhbnNwYXJlbnRfMXB4KV0gYmctW3NpemU6NS43NXJlbV81Ljc1cmVtXSBvcGFjaXR5LVswLjA5XVwiIC8+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgbGVmdC01IHRvcC01IHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci84MCBiZy1icmFuZC1kYXJrLzc4IHB4LTMgcHktMS41IHRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgSW5xdWlyeSBpbnRha2UgbGl2ZVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGJvdHRvbS01IHJpZ2h0LTUgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyLzgwIGJnLWJyYW5kLWRhcmsvNzggcHgtMyBweS0xLjUgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMThlbV0gdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICBDUk0gc3luY2VkIGF1dG9tYXRpY2FsbHlcbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGdyaWQgaC1mdWxsIGdhcC01IHB0LTEyIG1kOmdyaWQtY29scy1bMC41NWZyXzAuNDVmcl0gbWQ6cHQtMTBcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjg1cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci83NSBiZy1icmFuZC1kYXJrLzU1IHAtNSBiYWNrZHJvcC1ibHVyLXNtIG1kOnAtNlwiPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5JbnF1aXJ5IGludGFrZTwvcD5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTUgc3BhY2UteS0zXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuMjVyZW1dIGJvcmRlciBib3JkZXItd2hpdGUvOCBiZy13aGl0ZS9bMC4wM10gcHgtNCBweS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWJldHdlZW4gZ2FwLTRcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZVwiPk1pbGxlciBFc3RhdGU8L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIHRleHQteHMgdGV4dC1icmFuZC1tdXRlZFwiPkxpc3RpbmcgcG9ydGFsIGlucXVpcnkgZnJvbSBUcmliZWNhIHBlbnRob3VzZTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJyb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldLzEyIHB4LTIuNSBweS0xIHRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE0ZW1dIHRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICBOZXdcbiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGJvcmRlci1iIGJvcmRlci1icmFuZC1ib3JkZXIvNjAgcGItMyB0ZXh0LXNtIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LW1lZGl1bSB0ZXh0LWJyYW5kLWNyZW1lXCI+VmFsZSBTdHVkaW88L3A+XG4gICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXhzXCI+RGVzaWduIGNvbnN1bHRhdGlvbiByZXF1ZXN0PC9wPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC14c1wiPjAyIG1pbjwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBib3JkZXItYiBib3JkZXItYnJhbmQtYm9yZGVyLzYwIHBiLTMgdGV4dC1zbSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZVwiPk5vcnRobGluZSBHcm91cDwvcD5cbiAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIHRleHQteHNcIj5XZWJzaXRlIGZvcm0gYW5kIGVtYWlsIG1lcmdlZDwvcD5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQteHNcIj4wNSBtaW48L3NwYW4+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZVwiPkhhcmJvciBMb2Z0PC9wPlxuICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTEgdGV4dC14c1wiPkFwcG9pbnRtZW50IHJlcXVlc3Qgd2l0aCBmbG9vcnBsYW4gYXR0YWNoZWQ8L3A+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LXhzXCI+MDkgbWluPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtNSBtZDpncmlkLXJvd3MtWzEuMDJmcl8wLjk4ZnJdXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjg1cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci83NSBiZy1icmFuZC1kYXJrLzU1IHAtNSBiYWNrZHJvcC1ibHVyLXNtIG1kOnAtNlwiPlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLXN0YXJ0IGp1c3RpZnktYmV0d2VlbiBnYXAtNFwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIFF1YWxpZmljYXRpb24gc2lnbmFsXG4gICAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtdC0zIHRleHQteGwgZm9udC1tZWRpdW0gdHJhY2tpbmctdGlnaHQgdGV4dC1icmFuZC1jcmVtZVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgQnVkZ2V0LCBpbnRlbnQsIGFuZCB0aW1pbmcgc3VyZmFjZWQgZWFybHlcbiAgICAgICAgICAgICAgICAgICAgICA8L2gzPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldLzEyIHB4LTMgcHktMSB0ZXh0LVsxMHB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNmVtXSB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXVwiPlxuICAgICAgICAgICAgICAgICAgICAgIEhpZ2ggaW50ZW50XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNSByb3VuZGVkLVsxLjM1cmVtXSBib3JkZXIgYm9yZGVyLXdoaXRlLzggYmctd2hpdGUvWzAuMDNdIHAtNFwiPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtYnJhbmQtY3JlbWVcIj4zLWJlZHJvb20gcmVzaWRlbmNlIGlucXVpcnk8L3A+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTIgdGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgICAgICAgICAgIE1vdmUtaW4gd2l0aGluIDMwIGRheXMsIHZpZXdpbmcgcmVxdWVzdGVkLCBhcHByb3ZhbCBzdGF0dXMgY29uZmlybWVkLCBwcmVtaXVtIHNlZ21lbnQgbWF0Y2hlZC5cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNSBmbGV4IGZsZXgtd3JhcCBnYXAtMyB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIHB4LTMgcHktMS41XCI+VXJnZW5jeSA5MiU8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBweC0zIHB5LTEuNVwiPkJ1ZGdldCBjb25maXJtZWQ8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBweC0zIHB5LTEuNVwiPkZpdCBhcHByb3ZlZDwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjg1cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci83NSBiZy1icmFuZC1kYXJrLzU1IHAtNSBiYWNrZHJvcC1ibHVyLXNtIG1kOnAtNlwiPlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTRcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsxMHB4XSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xOGVtXSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICBBc3NpZ25tZW50IGFuZCBmb2xsb3ctdXBcbiAgICAgICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTMgdGV4dC14bCBmb250LW1lZGl1bSB0cmFja2luZy10aWdodCB0ZXh0LWJyYW5kLWNyZW1lXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICBOZXh0LXN0ZXAgb3duZXJzaGlwIHN0YXlzIHZpc2libGVcbiAgICAgICAgICAgICAgICAgICAgICA8L2gzPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxOH0gY2xhc3NOYW1lPVwidGV4dC1bdmFyKC0tY29sb3ItYnJhbmQtYWNjZW50LWFsdCldXCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTUgc3BhY2UteS00XCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWJldHdlZW4gZ2FwLTRcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZVwiPkFzc2lnbmVkIG93bmVyPC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXNtIHRleHQtYnJhbmQtbXV0ZWRcIj5KdWxpYW4gVmFuY2U8L3A+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJnLVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQtYWx0KV0vMTIgcHgtMi41IHB5LTEgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTRlbV0gdGV4dC1bdmFyKC0tY29sb3ItYnJhbmQtYWNjZW50LWFsdCldXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICBDb25maXJtZWRcbiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC00XCI+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtbWVkaXVtIHRleHQtYnJhbmQtY3JlbWVcIj5Gb2xsb3ctdXAgYWN0aW9uPC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXNtIHRleHQtYnJhbmQtbXV0ZWRcIj5QaG9uZSBjYWxsIHF1ZXVlZCB3aXRoIHByb3BlcnR5IHN1bW1hcnkgYXR0YWNoZWQ8L3A+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPERhdGFiYXNlIHNpemU9ezE4fSBjbGFzc05hbWU9XCJtdC0xIHRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtMiBoLTEuNSBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1mdWxsIGJnLWJsYWNrLzQwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoLWZ1bGwgdy1bODQlXSByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tciBmcm9tLVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXSB0by1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV1cIiAvPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIFByaWNpbmcoKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicmVsYXRpdmUgYm9yZGVyLXkgYm9yZGVyLWJyYW5kLWJvcmRlciBiZy1icmFuZC1zdXJmYWNlIHB4LTYgcHktMjBcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byBtYXgtdy1bODVyZW1dXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItMTQgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwibWItNCB0ZXh0LVsyLjNyZW1dIGZvbnQtbWVkaXVtIHRyYWNraW5nLXRpZ2h0ZXIgdGV4dC1icmFuZC1jcmVtZSBtZDp0ZXh0LVsyLjlyZW1dXCI+XG4gICAgICAgICAgICBDaG9vc2UgeW91ciByb2xsb3V0XG4gICAgICAgICAgPC9oMj5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJteC1hdXRvIG1heC13LXhsIHRleHQtbGcgdGV4dC1icmFuZC1tdXRlZFwiPlxuICAgICAgICAgICAgU3RhcnQgd2l0aCBvbmUgY2hhbm5lbCBvciBkZXBsb3kgQUkgYXV0b21hdGlvbiB3b3JrZmxvd3MgYWNyb3NzIHlvdXIgcmVhbCBlc3RhdGUgb3IgaW50ZXJpb3IgZGVzaWduXG4gICAgICAgICAgICBwaXBlbGluZS5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMSBnYXAtNiBtZDpncmlkLWNvbHMtM1wiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCByb3VuZGVkLVsycmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBiZy1icmFuZC1kYXJrIHAtNyBtZDpwLThcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIHRleHQtYnJhbmQtbXV0ZWRcIj5TdGFydGVyPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTIgdGV4dC01eGwgZm9udC1zZW1pYm9sZCB0cmFja2luZy10aWdodGVyIHRleHQtYnJhbmQtY3JlbWVcIj5cbiAgICAgICAgICAgICAgJDI5OTA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtbm9ybWFsIHRleHQtYnJhbmQtbXV0ZWRcIj4vbW88L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm1iLTcgdGV4dC1zbSB0ZXh0LWJyYW5kLW11dGVkXCI+Rm9yIG9uZSBmdW5uZWwgYW5kIG9uZSB0ZWFtLjwvcD5cblxuICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT1cIm1iLTkgZmxleC0xIHNwYWNlLXktNFwiPlxuICAgICAgICAgICAgICA8bGkgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgdGV4dC1zbSB0ZXh0LWJyYW5kLWNyZW1lLzgwXCI+XG4gICAgICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC1icmFuZC1tdXRlZFwiIC8+IEFJIGludGFrZSBhY3Jvc3Mgd2ViIGFuZCBsaXN0aW5nIHBvcnRhbHNcbiAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHRleHQtc20gdGV4dC1icmFuZC1jcmVtZS84MFwiPlxuICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IGNsYXNzTmFtZT1cInRleHQtYnJhbmQtbXV0ZWRcIiAvPiBRdWFsaWZpY2F0aW9uIHJ1bGVzIGFuZCByb3V0aW5nIGZvciBvbmVcbiAgICAgICAgICAgICAgICB3b3JrZmxvd1xuICAgICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgICA8bGkgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgdGV4dC1zbSB0ZXh0LWJyYW5kLWNyZW1lLzgwXCI+XG4gICAgICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC1icmFuZC1tdXRlZFwiIC8+IFdlZWtseSByZXBvcnRpbmcgYW5kIHdvcmtmbG93IHR1bmluZ1xuICAgICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICAgIHRvPXtTSVRFX0xJTktTLmJvb2tEZW1vfVxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJpbmxpbmUtZmxleCB3LWZ1bGwgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBiZy1icmFuZC1zdXJmYWNlIHB5LTQgZm9udC1tZWRpdW0gdGV4dC1icmFuZC1jcmVtZSB0cmFuc2l0aW9uLWNvbG9ycyBob3ZlcjpiZy1icmFuZC1ib3JkZXJcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICBCb29rIERlbW9cbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgZmxleCBmbGV4LWNvbCByb3VuZGVkLVsycmVtXSBib3JkZXIgYm9yZGVyLXRyYW5zcGFyZW50IGJnLWdyYWRpZW50LXRvLWIgZnJvbS1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV0gdG8tWyNkOTVjMmJdIHAtNyBzaGFkb3ctMnhsIHNoYWRvdy1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV0vMjAgbWQ6LXRyYW5zbGF0ZS15LTMgbWQ6cC04XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIHJpZ2h0LTggdG9wLTAgcm91bmRlZC1iLWxnIGJnLWJyYW5kLWRhcmsgcHgtMyBweS0xIHRleHQteHMgZm9udC1ib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXVwiPlxuICAgICAgICAgICAgICBNb3N0IENob3NlblxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTQgdGV4dC1zbSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciB0ZXh0LXdoaXRlLzgwXCI+R3Jvd3RoPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTIgdGV4dC01eGwgZm9udC1zZW1pYm9sZCB0cmFja2luZy10aWdodGVyIHRleHQtd2hpdGVcIj5cbiAgICAgICAgICAgICAgJDQ5OTA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtbm9ybWFsIHRleHQtd2hpdGUvNzBcIj4vbW88L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm1iLTcgdGV4dC1zbSB0ZXh0LXdoaXRlLzgwXCI+Rm9yIGZpcm1zIHNjYWxpbmcgbGVhZCB2b2x1bWUgYW5kIHJlc3BvbnNlIHRpbWUuPC9wPlxuXG4gICAgICAgICAgICA8dWwgY2xhc3NOYW1lPVwibWItOSBmbGV4LTEgc3BhY2UteS00XCI+XG4gICAgICAgICAgICAgIDxsaSBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyB0ZXh0LXNtIHRleHQtd2hpdGVcIj5cbiAgICAgICAgICAgICAgICA8Q2hlY2tDaXJjbGUyIHNpemU9ezE2fSBjbGFzc05hbWU9XCJ0ZXh0LXdoaXRlLzYwXCIgLz4gTXVsdGktY2hhbm5lbCBsZWFkIGNhcHR1cmVcbiAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHRleHQtc20gdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IGNsYXNzTmFtZT1cInRleHQtd2hpdGUvNjBcIiAvPiBBSS1hZ2VudCBmb2xsb3ctdXAgYW5kIGFwcG9pbnRtZW50IHJvdXRpbmdcbiAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHRleHQtc20gdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IGNsYXNzTmFtZT1cInRleHQtd2hpdGUvNjBcIiAvPiBDUk0gaGFuZG9mZiB3aXRoIHdvcmtmbG93IHJlcG9ydGluZ1xuICAgICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgICA8bGkgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgdGV4dC1zbSB0ZXh0LXdoaXRlXCI+XG4gICAgICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC13aGl0ZS82MFwiIC8+IE9uZ29pbmcgd29ya2Zsb3cgdHVuaW5nIGFuZCBzdXBwb3J0XG4gICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICA8L3VsPlxuICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgdG89e1NJVEVfTElOS1MuYm9va0RlbW99XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IHctZnVsbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIGJnLWJyYW5kLWRhcmsgcHktNCBmb250LW1lZGl1bSB0ZXh0LXdoaXRlIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJnLWJsYWNrXCJcbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC1jb2wgcm91bmRlZC1bMnJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIgYmctYnJhbmQtZGFyayBwLTcgbWQ6cC04XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTQgdGV4dC1zbSBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciB0ZXh0LWJyYW5kLW11dGVkXCI+UG9ydGZvbGlvPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTIgdGV4dC01eGwgZm9udC1zZW1pYm9sZCB0cmFja2luZy10aWdodGVyIHRleHQtYnJhbmQtY3JlbWVcIj5cbiAgICAgICAgICAgICAgJDY5OTA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtbm9ybWFsIHRleHQtYnJhbmQtbXV0ZWRcIj4vbW88L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm1iLTcgdGV4dC1zbSB0ZXh0LWJyYW5kLW11dGVkXCI+Rm9yIG11bHRpLXRlYW0gcHJvcGVydHkgZ3JvdXBzIGFuZCBzdHVkaW9zLjwvcD5cblxuICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT1cIm1iLTkgZmxleC0xIHNwYWNlLXktNFwiPlxuICAgICAgICAgICAgICA8bGkgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgdGV4dC1zbSB0ZXh0LWJyYW5kLWNyZW1lLzgwXCI+XG4gICAgICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC1bdmFyKC0tY29sb3ItYnJhbmQtYWNjZW50KV1cIiAvPiBDdXN0b20gYWdlbnQgbG9naWMgZm9yIG11bHRpcGxlXG4gICAgICAgICAgICAgICAgc2VnbWVudHNcbiAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHRleHQtc20gdGV4dC1icmFuZC1jcmVtZS84MFwiPlxuICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IGNsYXNzTmFtZT1cInRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldXCIgLz4gU2FsZXMgYW5kIGRlc2lnbiBpbnRha2VcbiAgICAgICAgICAgICAgICB3b3JrZmxvd3NcbiAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHRleHQtc20gdGV4dC1icmFuZC1jcmVtZS84MFwiPlxuICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IGNsYXNzTmFtZT1cInRleHQtW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldXCIgLz4gQ3Jvc3MtdGVhbSByb3V0aW5nIGFuZCBzaGFyZWRcbiAgICAgICAgICAgICAgICBwaXBlbGluZSB2aXNpYmlsaXR5XG4gICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICAgIDxsaSBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyB0ZXh0LXNtIHRleHQtYnJhbmQtY3JlbWUvODBcIj5cbiAgICAgICAgICAgICAgICA8Q2hlY2tDaXJjbGUyIHNpemU9ezE2fSBjbGFzc05hbWU9XCJ0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXVwiIC8+IERlZGljYXRlZCByb2xsb3V0IGFuZCByZXBvcnRpbmdcbiAgICAgICAgICAgICAgICBzdXBwb3J0XG4gICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICA8L3VsPlxuICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgdG89e1NJVEVfTElOS1MuYm9va0RlbW99XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IHctZnVsbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLXN1cmZhY2UgcHktNCBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLWNyZW1lIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJnLWJyYW5kLWJvcmRlclwiXG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIEJvb2sgRGVtb1xuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIENUQSgpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cImNvbnRhY3RcIiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBvdmVyZmxvdy1oaWRkZW4gcHgtNiBweS0yNCBtZDpweS0yOFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBsZWZ0LTEvMiB0b3AtMS8yIC16LTEwIGgtWzcyMHB4XSB3LVs3MjBweF0gLXRyYW5zbGF0ZS14LTEvMiAtdHJhbnNsYXRlLXktMS8yIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by10ciBmcm9tLVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXS8xOCB0by10cmFuc3BhcmVudCBibHVyLVsxMjBweF1cIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJteC1hdXRvIG1heC13LTN4bCB0ZXh0LWNlbnRlclwiPlxuICAgICAgICA8aDIgY2xhc3NOYW1lPVwibXgtYXV0byBtYi02IG1heC13LVsxNWNoXSB0ZXh0LWJhbGFuY2UgdGV4dC1bMi42NXJlbV0gZm9udC1tZWRpdW0gbGVhZGluZy1bMS4wMl0gdHJhY2tpbmctdGlnaHRlciB0ZXh0LWJyYW5kLWNyZW1lIG1kOm1heC13LVsxNGNoXSBtZDp0ZXh0LVszLjhyZW1dXCI+XG4gICAgICAgICAgVHVybiBtb3JlIGlucXVpcmllcyBpbnRvIHF1YWxpZmllZCBjb252ZXJzYXRpb25zLlxuICAgICAgICA8L2gyPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJteC1hdXRvIG1iLTggbWF4LXcteGwgdGV4dC1sZyBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgV2XigJlsbCB3YWxrIHlvdSB0aHJvdWdoIGxlYWQgY2FwdHVyZSwgcXVhbGlmaWNhdGlvbiwgcm91dGluZywgYW5kIGZvbGxvdy11cCB3b3JrZmxvd3MgZm9yIHlvdXIgcmVhbCBlc3RhdGUgb3JcbiAgICAgICAgICBpbnRlcmlvciBkZXNpZ24gdGVhbS5cbiAgICAgICAgPC9wPlxuICAgICAgICA8TGlua1xuICAgICAgICAgIHRvPXtTSVRFX0xJTktTLmJvb2tEZW1vfVxuICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IHJvdW5kZWQtZnVsbCBiZy1icmFuZC1jcmVtZSBweC05IHB5LTQgdGV4dC1sZyBmb250LW1lZGl1bSB0ZXh0LWJyYW5kLWRhcmsgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwIGhvdmVyOmJnLXdoaXRlXCJcbiAgICAgICAgPlxuICAgICAgICAgIEJvb2sgRGVtb1xuICAgICAgICA8L0xpbms+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBGb290ZXIoKSB7XG4gIHJldHVybiAoXG4gICAgPGZvb3RlciBjbGFzc05hbWU9XCJib3JkZXItdCBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLWRhcmsgcHgtNiBweS0xMlwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJteC1hdXRvIGZsZXggbWF4LXctWzg1cmVtXSBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC02IHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1icmFuZC1tdXRlZCBtZDpmbGV4LXJvd1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0yXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoLTUgdy01IHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by10ciBmcm9tLWJyYW5kLWFjY2VudCB0by1icmFuZC1hY2NlbnQtYWx0XCIgLz5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LWJyYW5kLWNyZW1lXCI+QXVyYTwvc3Bhbj4gwqkgMjAyNi5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBnYXAtOFwiPlxuICAgICAgICAgIDxMaW5rIHRvPXtTSVRFX0xJTktTLndvcmt9IGNsYXNzTmFtZT1cInRyYW5zaXRpb24tY29sb3JzIGhvdmVyOnRleHQtYnJhbmQtY3JlbWVcIj5cbiAgICAgICAgICAgIFdvcmtmbG93XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDxMaW5rIHRvPXtTSVRFX0xJTktTLmFib3V0fSBjbGFzc05hbWU9XCJ0cmFuc2l0aW9uLWNvbG9ycyBob3Zlcjp0ZXh0LWJyYW5kLWNyZW1lXCI+XG4gICAgICAgICAgICBBYm91dFxuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8TGluayB0bz17U0lURV9MSU5LUy5ib29rRGVtb30gY2xhc3NOYW1lPVwidHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6dGV4dC1icmFuZC1jcmVtZVwiPlxuICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZm9vdGVyPlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9DaHJpc3RvcGhlciBIYW5yeWFuL2F1dG9tYXRpb25fd2Vic2l0ZS9zcmMvYXBwL2NvbXBvbmVudHMvQXVyYUFwcC50c3gifQ==

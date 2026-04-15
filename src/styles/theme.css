@@ -1,20 +1,19 @@
 @theme {
-  --color-brand-dark: #030305;
-  --color-brand-surface: #0A0F1A;
-  --color-brand-surface-light: #131B2F;
-  --color-brand-border: #1E293B;
-  --color-brand-creme: #F2F3F4;
-  --color-brand-muted: #8A9BB2;
-  --color-brand-accent: #6DA5C0;
-  --color-brand-accent-alt: #A77693;
-  --color-brand-orange: #FF6B35;
-  
+  --color-brand-dark: #1A1A1A;
+  --color-brand-surface: #F9F8F6;
+  --color-brand-surface-light: #F4F3EF;
+  --color-brand-border: #E5E3DB;
+  --color-brand-creme: #F9F8F6;
+  --color-brand-muted: #6F6A63;
+  --color-brand-accent: #4A5D4E;
+  --color-brand-accent-alt: #9C8E7A;
+  --color-brand-orange: #7C6250;
   --font-sans: var(--font-manrope);
 }
 
 body {
-  background-color: var(--color-brand-dark);
-  color: var(--color-brand-creme);
+  background-color: var(--color-brand-surface);
+  color: var(--color-brand-dark);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

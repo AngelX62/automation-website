@@ -22,7 +22,7 @@ const INITIAL_VALUES: DemoFormValues = {
   workEmail: '',
   company: '',
   phone: '',
-  sector: 'real-estate',
+  sector: 'Commercial interior design studio',
   teamSize: '',
   monthlyInquiries: '',
   challenge: '',
@@ -32,9 +32,9 @@ const FIELD_BASE_CLASSES =
   'w-full rounded-[1.2rem] border bg-brand-dark/70 px-4 py-3.5 text-base text-brand-creme outline-none transition-colors placeholder:text-brand-muted/60 focus:border-[var(--color-brand-accent)]';
 
 function buildDemoMailto(values: DemoFormValues) {
-  const subject = `Book Demo Request - ${values.company}`;
+  const subject = `Avenarc Walkthrough Request - ${values.company}`;
   const body = [
-    'New demo request',
+    'New walkthrough request',
     '',
     `Name: ${values.fullName}`,
     `Work email: ${values.workEmail}`,
@@ -44,7 +44,7 @@ function buildDemoMailto(values: DemoFormValues) {
     `Team size: ${values.teamSize}`,
     `Monthly inquiries: ${values.monthlyInquiries}`,
     '',
-    'What should we automate first?',
+    'What should the workflow cover first?',
     values.challenge,
   ].join('\n');
 
@@ -77,7 +77,7 @@ function validate(values: DemoFormValues): DemoFormErrors {
   }
 
   if (!values.challenge.trim()) {
-    nextErrors.challenge = 'Tell us what you want the demo to focus on.';
+    nextErrors.challenge = 'Tell us what the walkthrough should focus on.';
   }
 
   return nextErrors;
@@ -150,7 +150,7 @@ export function BookDemo() {
 
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-border bg-brand-surface/75 px-3 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-muted">
             <Sparkles size={12} className="text-[var(--color-brand-orange)]" />
-            Book Demo
+            Plan Your Walkthrough
           </div>
         </div>
 
@@ -162,11 +162,11 @@ export function BookDemo() {
             className="lg:pr-4"
           >
             <h1 className="max-w-[9ch] text-4xl font-semibold leading-[0.92] tracking-tighter text-brand-creme md:text-[4.9rem]">
-              Tell us how your team handles lead workflows.
+              Tell us how studio inquiries move today.
             </h1>
             <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-brand-muted md:text-lg">
-              Share a few details and we&apos;ll tailor the demo around lead capture, qualification, routing, and
-              follow-up workflows for your real estate or interior design team.
+              Share how requests arrive, where fit gets decided, and where ownership slips. We&apos;ll use that to shape
+              the walkthrough.
             </p>
 
             <motion.aside
@@ -180,7 +180,7 @@ export function BookDemo() {
 
             <div className="relative">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-muted">
-                What We Tailor In The Demo
+                What We Map In The Walkthrough
               </p>
               <div className="mt-6 space-y-4">
                 <div className="rounded-[1.4rem] border border-brand-border/80 bg-brand-dark/55 p-4">
@@ -188,10 +188,10 @@ export function BookDemo() {
                     <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-brand-accent)]/14 text-[var(--color-brand-accent)]">
                       <Building2 size={20} />
                     </div>
-                    <h2 className="text-xl font-medium tracking-tight">Lead capture across channels</h2>
+                    <h2 className="text-xl font-medium tracking-tight">Inquiry intake and brief capture</h2>
                   </div>
                   <p className="text-sm leading-relaxed text-brand-muted">
-                    We map how inquiries enter today and where agentic intake can reduce response lag.
+                    We map which forms, inboxes, referrals, and proposal requests need to land in one working view.
                   </p>
                 </div>
 
@@ -200,10 +200,11 @@ export function BookDemo() {
                     <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-brand-accent-alt)]/16 text-[var(--color-brand-accent-alt)]">
                       <Palette size={20} />
                     </div>
-                    <h2 className="text-xl font-medium tracking-tight">Qualification for high-consideration work</h2>
+                    <h2 className="text-xl font-medium tracking-tight">Fit screening and qualification</h2>
                   </div>
                   <p className="text-sm leading-relaxed text-brand-muted">
-                    For brokerages and studios alike, the demo shows how intent, fit, and urgency can be surfaced earlier.
+                    We look at scope, budget reality, timing, and decision-makers so your team knows what deserves time
+                    first.
                   </p>
                 </div>
 
@@ -212,10 +213,11 @@ export function BookDemo() {
                     <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-brand-orange)]/14 text-[var(--color-brand-orange)]">
                       <Users size={20} />
                     </div>
-                    <h2 className="text-xl font-medium tracking-tight">Routing and next-step ownership</h2>
+                    <h2 className="text-xl font-medium tracking-tight">Ownership routing and reminders</h2>
                   </div>
                   <p className="text-sm leading-relaxed text-brand-muted">
-                    We&apos;ll focus the walkthrough on who needs the lead next and how handoffs stay visible.
+                    We focus on who gets context next, what summary they receive, and how follow-up stays visible
+                    without chasing.
                   </p>
                 </div>
               </div>
@@ -235,7 +237,8 @@ export function BookDemo() {
                       <ArrowUpRight size={16} />
                     </a>
                     <p className="mt-2 text-sm leading-relaxed text-brand-muted">
-                      Submitting the form opens a prefilled email draft with your details so we can respond quickly.
+                      This walkthrough is focused on pre-sales coordination and pipeline movement, not invoicing or
+                      payment operations.
                     </p>
                   </div>
                 </div>
@@ -258,7 +261,7 @@ export function BookDemo() {
                   Tailored walkthrough
                 </p>
                 <h2 className="mt-2 text-xl font-medium tracking-tight text-brand-creme">
-                  Tell us where the workflow breaks today.
+                  Tell us where pre-sales coordination breaks today.
                 </h2>
               </div>
               <span className="rounded-full border border-brand-border bg-brand-dark/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-muted">
@@ -312,7 +315,7 @@ export function BookDemo() {
                   value={values.company}
                   onChange={handleChange}
                   className={fieldClasses('company')}
-                  placeholder="Northline Properties"
+                  placeholder="Northline Studio"
                 />
                 {errors.company ? <p className="mt-2 text-sm text-red-300">{errors.company}</p> : null}
               </div>
@@ -347,9 +350,9 @@ export function BookDemo() {
                   onChange={handleChange}
                   className={`${FIELD_BASE_CLASSES} border-brand-border appearance-none`}
                 >
-                  <option value="real-estate">Real estate</option>
-                  <option value="interior-design">Interior design</option>
-                  <option value="both">Both</option>
+                  <option value="Commercial interior design studio">Commercial interior design studio</option>
+                  <option value="Related project partner">Related project partner</option>
+                  <option value="Real-estate-adjacent firm">Real-estate-adjacent firm</option>
                 </select>
               </div>
 
@@ -364,7 +367,7 @@ export function BookDemo() {
                   value={values.teamSize}
                   onChange={handleChange}
                   className={fieldClasses('teamSize')}
-                  placeholder="8 agents / 3 coordinators"
+                  placeholder="6 designers / 2 studio coordinators"
                 />
                 {errors.teamSize ? <p className="mt-2 text-sm text-red-300">{errors.teamSize}</p> : null}
               </div>
@@ -373,7 +376,7 @@ export function BookDemo() {
             <div className="mt-6 grid gap-6 md:grid-cols-[0.65fr_1.35fr]">
               <div>
                 <label htmlFor="monthlyInquiries" className="mb-3 block text-sm font-semibold uppercase tracking-[0.14em] text-brand-muted">
-                  Monthly inquiries
+                  Monthly studio inquiries
                 </label>
                 <input
                   id="monthlyInquiries"
@@ -389,7 +392,7 @@ export function BookDemo() {
 
               <div>
                 <label htmlFor="challenge" className="mb-3 block text-sm font-semibold uppercase tracking-[0.14em] text-brand-muted">
-                  What should we automate first?
+                  What should the workflow cover first?
                 </label>
                 <textarea
                   id="challenge"
@@ -398,7 +401,7 @@ export function BookDemo() {
                   value={values.challenge}
                   onChange={handleChange}
                   className={`${fieldClasses('challenge')} min-h-[8.5rem] resize-y`}
-                  placeholder="For example: qualifying listing inquiries, routing design consultations, first-response follow-up, CRM handoff, or proposal requests."
+                  placeholder="For example: consultation qualification, design brief summaries, proposal-request triage, owner reminders, follow-up coordination, or pipeline visibility."
                 />
                 {errors.challenge ? <p className="mt-2 text-sm text-red-300">{errors.challenge}</p> : null}
               </div>
@@ -409,12 +412,12 @@ export function BookDemo() {
                 type="submit"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--color-brand-orange)] px-7 py-4 text-base font-medium text-white transition-all hover:bg-opacity-90"
               >
-                Request Demo
+                Plan Your Walkthrough
                 <ArrowUpRight size={17} />
               </button>
 
               <p className="text-sm leading-relaxed text-brand-muted">
-                No long intake process. This opens a prefilled email draft with your details so we can reply with the right next steps.
+                No long intake process. This opens a prefilled email draft so we can scope the right workflow quickly.
               </p>
 
               {submitted ? (

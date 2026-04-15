@@ -1,0 +1,314 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/app/components/About.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=c211b467"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/motion_react.js?v=c211b467";
+import { Link } from "/node_modules/.vite/deps/react-router.js?v=c211b467";
+import { ImageWithFallback } from "/src/app/components/figma/ImageWithFallback.tsx";
+import { SITE_LINKS } from "/src/app/site.ts";
+export function About() {
+  return /* @__PURE__ */ jsxDEV(
+    motion.div,
+    {
+      initial: { opacity: 0, filter: "blur(10px)" },
+      animate: { opacity: 1, filter: "blur(0px)" },
+      exit: { opacity: 0, filter: "blur(10px)" },
+      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+      className: "relative min-h-screen px-6 pb-20 pt-28 md:pt-32",
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute right-0 top-0 -z-10 h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-[var(--color-brand-accent)]/10 to-transparent blur-[100px]" }, void 0, false, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+          lineNumber: 35,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-[85rem]", children: [
+          /* @__PURE__ */ jsxDEV(
+            motion.div,
+            {
+              initial: { opacity: 0, y: 30 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] },
+              className: "mb-20 max-w-[52rem]",
+              children: [
+                /* @__PURE__ */ jsxDEV("h1", { className: "mb-7 text-4xl font-medium leading-[0.92] tracking-tighter text-brand-creme md:text-[4.7rem] lg:text-[5.7rem]", children: [
+                  "Built for teams where ",
+                  /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 45,
+                    columnNumber: 35
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "bg-gradient-to-r from-[var(--color-brand-accent)] to-[var(--color-brand-accent-alt)] bg-clip-text text-transparent", children: "every inquiry" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 46,
+                    columnNumber: 13
+                  }, this),
+                  " ",
+                  "matters."
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 44,
+                  columnNumber: 11
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "max-w-xl text-lg font-medium leading-relaxed text-brand-muted md:text-[1.35rem]", children: "Aura builds AI automation workflows with AI agents for real estate firms and interior design studios that need faster qualification, cleaner routing, and more consistent follow-up." }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 51,
+                  columnNumber: 11
+                }, this)
+              ]
+            },
+            void 0,
+            true,
+            {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 38,
+              columnNumber: 9
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV("div", { className: "relative mb-24 h-[44vh] overflow-hidden rounded-[2.5rem] border border-brand-border shadow-2xl shadow-black/50 md:h-[58vh]", children: [
+            /* @__PURE__ */ jsxDEV(
+              ImageWithFallback,
+              {
+                src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400",
+                alt: "Modern residential property exterior",
+                className: "h-full w-full object-cover opacity-62 grayscale"
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 58,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/25 to-transparent" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 63,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute bottom-6 left-6 rounded-full border border-brand-border/80 bg-brand-dark/72 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted", children: "Real estate and design operations" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 64,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+            lineNumber: 57,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "mb-24 grid grid-cols-1 items-start gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:gap-10", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "lg:sticky lg:top-32", children: [
+              /* @__PURE__ */ jsxDEV("h2", { className: "mb-5 text-[2.15rem] font-medium leading-none tracking-tighter text-brand-creme md:text-[2.75rem]", children: "Leadership" }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 71,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "max-w-md text-lg font-medium text-brand-muted", children: "The team behind Aura comes from proptech, automation, and high-touch sales environments where response speed and workflow clarity directly affect revenue." }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 74,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 70,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col gap-8", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.85rem] border border-brand-border bg-brand-surface/92 p-6 transition-colors hover:border-brand-border/80 md:p-7", children: /* @__PURE__ */ jsxDEV("div", { className: "grid gap-6 md:grid-cols-[13rem_1fr] md:items-start", children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "relative h-56 overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-dark", children: /* @__PURE__ */ jsxDEV(
+                  ImageWithFallback,
+                  {
+                    src: "/images/laurentius-hanryan.png",
+                    alt: "Laurentius Hanryan",
+                    className: "h-full w-full object-cover object-[center_18%] opacity-90"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 84,
+                    columnNumber: 19
+                  },
+                  this
+                ) }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 83,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("h3", { className: "text-[1.7rem] font-medium tracking-tight text-brand-creme md:text-[1.95rem]", children: "Laurentius Hanryan" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 91,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { className: "mb-5 mt-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-brand-orange)]", children: "Co-Founder & CEO" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 94,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { className: "leading-relaxed text-brand-muted", children: "Laurentius leads the commercial and operational side of Aura, setting the direction for growth and ensuring the business runs with focus. He guides sales and client relationships while keeping operations aligned and execution strong." }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 97,
+                    columnNumber: 19
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 90,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 82,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 81,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.85rem] border border-brand-border bg-brand-surface/92 p-6 transition-colors hover:border-brand-border/80 md:p-7", children: /* @__PURE__ */ jsxDEV("div", { className: "grid gap-6 md:grid-cols-[13rem_1fr] md:items-start", children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "relative h-56 overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-dark", children: /* @__PURE__ */ jsxDEV(
+                  ImageWithFallback,
+                  {
+                    src: "/images/christopher-hanryan.jpeg",
+                    alt: "Christopher Hanryan",
+                    className: "h-full w-full object-cover object-center opacity-85"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 109,
+                    columnNumber: 19
+                  },
+                  this
+                ) }, void 0, false, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 108,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("h3", { className: "text-[1.7rem] font-medium tracking-tight text-brand-creme md:text-[1.95rem]", children: "Christopher Hanryan" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 116,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { className: "mb-5 mt-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-brand-accent)]", children: "Co-Founder & CTO" }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 119,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { className: "leading-relaxed text-brand-muted", children: "Christopher leads the technical direction of Aura and builds the systems behind the product. He guides architecture and execution so the platform scales with speed and reliability." }, void 0, false, {
+                    fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                    lineNumber: 122,
+                    columnNumber: 19
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                  lineNumber: 115,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 107,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 106,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 80,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+            lineNumber: 69,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "relative border-t border-brand-border pt-16 text-center", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "absolute left-1/2 top-0 -z-10 h-[340px] w-[340px] -translate-x-1/2 rounded-full bg-[var(--color-brand-orange)]/6 blur-[85px]" }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 133,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("h2", { className: "mx-auto mb-4 max-w-[14ch] text-balance text-[2rem] font-medium tracking-tighter text-brand-creme md:max-w-[13ch] md:text-[2.8rem]", children: "See the product workflow live." }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 134,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { className: "mx-auto mb-7 max-w-lg text-base text-brand-muted", children: "We’ll show the intake, qualification, and routing layer on a live walkthrough built around your team." }, void 0, false, {
+              fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+              lineNumber: 137,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV(
+              Link,
+              {
+                to: SITE_LINKS.bookDemo,
+                className: "inline-flex rounded-full bg-[var(--color-brand-orange)] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-opacity-90",
+                children: "Book Demo"
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+                lineNumber: 140,
+                columnNumber: 11
+              },
+              this
+            )
+          ] }, void 0, true, {
+            fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+            lineNumber: 132,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+          lineNumber: 37,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx",
+      lineNumber: 28,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c = About;
+var _c;
+$RefreshReg$(_c, "About");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/Christopher Hanryan/automation_website/src/app/components/About.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QTtBQUFBLHFCQW9CQSxLQXJCRjtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQXNCQTtBQUFBLGlCQWhERjtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQWlEQTtBQUFBLGVBNURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBNkRBO0FBQUEsVUFFQSx1QkFBQyxTQUFJLFdBQVUsMkRBQ2I7QUFBQSxtQ0FBQyxTQUFJLFdBQVUsa0lBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBNkk7QUFBQSxZQUM3SSx1QkFBQyxRQUFHLFdBQVUscUlBQW1JLDhDQUFqSjtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUVBO0FBQUEsWUFDQSx1QkFBQyxPQUFFLFdBQVUsb0RBQWtELHFIQUEvRDtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUVBO0FBQUEsWUFDQTtBQUFBLGNBQUM7QUFBQTtBQUFBLGdCQUNDLElBQUlMLFdBQVdRO0FBQUFBLGdCQUNmLFdBQVU7QUFBQSxnQkFBa0o7QUFBQTtBQUFBLGNBRjlKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxZQUtBO0FBQUEsZUFiRjtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQWNBO0FBQUEsYUE3R0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQThHQTtBQUFBO0FBQUE7QUFBQSxJQXZIRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsRUF3SEE7QUFFSjtBQUFDQyxLQTVIZVI7QUFBSyxJQUFBUTtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJtb3Rpb24iLCJMaW5rIiwiSW1hZ2VXaXRoRmFsbGJhY2siLCJTSVRFX0xJTktTIiwiQWJvdXQiLCJvcGFjaXR5IiwiZmlsdGVyIiwiZHVyYXRpb24iLCJlYXNlIiwieSIsImRlbGF5IiwiYm9va0RlbW8iLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBYm91dC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IG1vdGlvbiB9IGZyb20gJ21vdGlvbi9yZWFjdCc7XG5pbXBvcnQgeyBMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyJztcbmltcG9ydCB7IEltYWdlV2l0aEZhbGxiYWNrIH0gZnJvbSAnLi9maWdtYS9JbWFnZVdpdGhGYWxsYmFjayc7XG5pbXBvcnQgeyBTSVRFX0xJTktTIH0gZnJvbSAnLi4vc2l0ZSc7XG5cbmV4cG9ydCBmdW5jdGlvbiBBYm91dCgpIHtcbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLmRpdlxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCBmaWx0ZXI6ICdibHVyKDEwcHgpJyB9fVxuICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCBmaWx0ZXI6ICdibHVyKDBweCknIH19XG4gICAgICBleGl0PXt7IG9wYWNpdHk6IDAsIGZpbHRlcjogJ2JsdXIoMTBweCknIH19XG4gICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjYsIGVhc2U6IFswLjE2LCAxLCAwLjMsIDFdIH19XG4gICAgICBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC1zY3JlZW4gcHgtNiBwYi0yMCBwdC0yOCBtZDpwdC0zMlwiXG4gICAgPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSByaWdodC0wIHRvcC0wIC16LTEwIGgtWzYwMHB4XSB3LVs2MDBweF0gcm91bmRlZC1mdWxsIGJnLWdyYWRpZW50LXRvLWJsIGZyb20tW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudCldLzEwIHRvLXRyYW5zcGFyZW50IGJsdXItWzEwMHB4XVwiIC8+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byBtYXgtdy1bODVyZW1dXCI+XG4gICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAzMCB9fVxuICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuOCwgZGVsYXk6IDAuMSwgZWFzZTogWzAuMTYsIDEsIDAuMywgMV0gfX1cbiAgICAgICAgICBjbGFzc05hbWU9XCJtYi0yMCBtYXgtdy1bNTJyZW1dXCJcbiAgICAgICAgPlxuICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJtYi03IHRleHQtNHhsIGZvbnQtbWVkaXVtIGxlYWRpbmctWzAuOTJdIHRyYWNraW5nLXRpZ2h0ZXIgdGV4dC1icmFuZC1jcmVtZSBtZDp0ZXh0LVs0LjdyZW1dIGxnOnRleHQtWzUuN3JlbV1cIj5cbiAgICAgICAgICAgIEJ1aWx0IGZvciB0ZWFtcyB3aGVyZSA8YnIgLz5cbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLXIgZnJvbS1bdmFyKC0tY29sb3ItYnJhbmQtYWNjZW50KV0gdG8tW3ZhcigtLWNvbG9yLWJyYW5kLWFjY2VudC1hbHQpXSBiZy1jbGlwLXRleHQgdGV4dC10cmFuc3BhcmVudFwiPlxuICAgICAgICAgICAgICBldmVyeSBpbnF1aXJ5XG4gICAgICAgICAgICA8L3NwYW4+eycgJ31cbiAgICAgICAgICAgIG1hdHRlcnMuXG4gICAgICAgICAgPC9oMT5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtYXgtdy14bCB0ZXh0LWxnIGZvbnQtbWVkaXVtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LWJyYW5kLW11dGVkIG1kOnRleHQtWzEuMzVyZW1dXCI+XG4gICAgICAgICAgICBBdXJhIGJ1aWxkcyBBSSBhdXRvbWF0aW9uIHdvcmtmbG93cyB3aXRoIEFJIGFnZW50cyBmb3IgcmVhbCBlc3RhdGUgZmlybXMgYW5kIGludGVyaW9yIGRlc2lnbiBzdHVkaW9zIHRoYXRcbiAgICAgICAgICAgIG5lZWQgZmFzdGVyIHF1YWxpZmljYXRpb24sIGNsZWFuZXIgcm91dGluZywgYW5kIG1vcmUgY29uc2lzdGVudCBmb2xsb3ctdXAuXG4gICAgICAgICAgPC9wPlxuICAgICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtYi0yNCBoLVs0NHZoXSBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMi41cmVtXSBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlciBzaGFkb3ctMnhsIHNoYWRvdy1ibGFjay81MCBtZDpoLVs1OHZoXVwiPlxuICAgICAgICAgIDxJbWFnZVdpdGhGYWxsYmFja1xuICAgICAgICAgICAgc3JjPVwiaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MDA1ODUxNTQ1MjYtOTkwZGNlZDRkYjBkP3E9ODAmdz0xNDAwXCJcbiAgICAgICAgICAgIGFsdD1cIk1vZGVybiByZXNpZGVudGlhbCBwcm9wZXJ0eSBleHRlcmlvclwiXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJoLWZ1bGwgdy1mdWxsIG9iamVjdC1jb3ZlciBvcGFjaXR5LTYyIGdyYXlzY2FsZVwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJyYW5kLWRhcmsgdmlhLWJyYW5kLWRhcmsvMjUgdG8tdHJhbnNwYXJlbnRcIiAvPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgYm90dG9tLTYgbGVmdC02IHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJyYW5kLWJvcmRlci84MCBiZy1icmFuZC1kYXJrLzcyIHB4LTMgcHktMS41IHRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE4ZW1dIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgIFJlYWwgZXN0YXRlIGFuZCBkZXNpZ24gb3BlcmF0aW9uc1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTI0IGdyaWQgZ3JpZC1jb2xzLTEgaXRlbXMtc3RhcnQgZ2FwLTEyIGxnOmdyaWQtY29scy1bMC44OGZyXzEuMTJmcl0gbGc6Z2FwLTEwXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZzpzdGlja3kgbGc6dG9wLTMyXCI+XG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwibWItNSB0ZXh0LVsyLjE1cmVtXSBmb250LW1lZGl1bSBsZWFkaW5nLW5vbmUgdHJhY2tpbmctdGlnaHRlciB0ZXh0LWJyYW5kLWNyZW1lIG1kOnRleHQtWzIuNzVyZW1dXCI+XG4gICAgICAgICAgICAgIExlYWRlcnNoaXBcbiAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtYXgtdy1tZCB0ZXh0LWxnIGZvbnQtbWVkaXVtIHRleHQtYnJhbmQtbXV0ZWRcIj5cbiAgICAgICAgICAgICAgVGhlIHRlYW0gYmVoaW5kIEF1cmEgY29tZXMgZnJvbSBwcm9wdGVjaCwgYXV0b21hdGlvbiwgYW5kIGhpZ2gtdG91Y2ggc2FsZXMgZW52aXJvbm1lbnRzIHdoZXJlIHJlc3BvbnNlXG4gICAgICAgICAgICAgIHNwZWVkIGFuZCB3b3JrZmxvdyBjbGFyaXR5IGRpcmVjdGx5IGFmZmVjdCByZXZlbnVlLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIGdhcC04XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuODVyZW1dIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLXN1cmZhY2UvOTIgcC02IHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJvcmRlci1icmFuZC1ib3JkZXIvODAgbWQ6cC03XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtNiBtZDpncmlkLWNvbHMtWzEzcmVtXzFmcl0gbWQ6aXRlbXMtc3RhcnRcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGgtNTYgb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtWzEuMjVyZW1dIGJvcmRlciBib3JkZXItYnJhbmQtYm9yZGVyIGJnLWJyYW5kLWRhcmtcIj5cbiAgICAgICAgICAgICAgICAgIDxJbWFnZVdpdGhGYWxsYmFja1xuICAgICAgICAgICAgICAgICAgICBzcmM9XCIvaW1hZ2VzL2xhdXJlbnRpdXMtaGFucnlhbi5wbmdcIlxuICAgICAgICAgICAgICAgICAgICBhbHQ9XCJMYXVyZW50aXVzIEhhbnJ5YW5cIlxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJoLWZ1bGwgdy1mdWxsIG9iamVjdC1jb3ZlciBvYmplY3QtW2NlbnRlcl8xOCVdIG9wYWNpdHktOTBcIlxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtWzEuN3JlbV0gZm9udC1tZWRpdW0gdHJhY2tpbmctdGlnaHQgdGV4dC1icmFuZC1jcmVtZSBtZDp0ZXh0LVsxLjk1cmVtXVwiPlxuICAgICAgICAgICAgICAgICAgICBMYXVyZW50aXVzIEhhbnJ5YW5cbiAgICAgICAgICAgICAgICAgIDwvaDM+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTUgbXQtMiB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1vcmFuZ2UpXVwiPlxuICAgICAgICAgICAgICAgICAgICBDby1Gb3VuZGVyICYgQ0VPXG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImxlYWRpbmctcmVsYXhlZCB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgIExhdXJlbnRpdXMgbGVhZHMgdGhlIGNvbW1lcmNpYWwgYW5kIG9wZXJhdGlvbmFsIHNpZGUgb2YgQXVyYSwgc2V0dGluZyB0aGUgZGlyZWN0aW9uIGZvciBncm93dGggYW5kXG4gICAgICAgICAgICAgICAgICAgIGVuc3VyaW5nIHRoZSBidXNpbmVzcyBydW5zIHdpdGggZm9jdXMuIEhlIGd1aWRlcyBzYWxlcyBhbmQgY2xpZW50IHJlbGF0aW9uc2hpcHMgd2hpbGUga2VlcGluZ1xuICAgICAgICAgICAgICAgICAgICBvcGVyYXRpb25zIGFsaWduZWQgYW5kIGV4ZWN1dGlvbiBzdHJvbmcuXG4gICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm91bmRlZC1bMS44NXJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIgYmctYnJhbmQtc3VyZmFjZS85MiBwLTYgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6Ym9yZGVyLWJyYW5kLWJvcmRlci84MCBtZDpwLTdcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdhcC02IG1kOmdyaWQtY29scy1bMTNyZW1fMWZyXSBtZDppdGVtcy1zdGFydFwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgaC01NiBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMS4yNXJlbV0gYm9yZGVyIGJvcmRlci1icmFuZC1ib3JkZXIgYmctYnJhbmQtZGFya1wiPlxuICAgICAgICAgICAgICAgICAgPEltYWdlV2l0aEZhbGxiYWNrXG4gICAgICAgICAgICAgICAgICAgIHNyYz1cIi9pbWFnZXMvY2hyaXN0b3BoZXItaGFucnlhbi5qcGVnXCJcbiAgICAgICAgICAgICAgICAgICAgYWx0PVwiQ2hyaXN0b3BoZXIgSGFucnlhblwiXG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImgtZnVsbCB3LWZ1bGwgb2JqZWN0LWNvdmVyIG9iamVjdC1jZW50ZXIgb3BhY2l0eS04NVwiXG4gICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC1bMS43cmVtXSBmb250LW1lZGl1bSB0cmFja2luZy10aWdodCB0ZXh0LWJyYW5kLWNyZW1lIG1kOnRleHQtWzEuOTVyZW1dXCI+XG4gICAgICAgICAgICAgICAgICAgIENocmlzdG9waGVyIEhhbnJ5YW5cbiAgICAgICAgICAgICAgICAgIDwvaDM+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTUgbXQtMiB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCB0ZXh0LVt2YXIoLS1jb2xvci1icmFuZC1hY2NlbnQpXVwiPlxuICAgICAgICAgICAgICAgICAgICBDby1Gb3VuZGVyICYgQ1RPXG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImxlYWRpbmctcmVsYXhlZCB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICAgICAgICAgIENocmlzdG9waGVyIGxlYWRzIHRoZSB0ZWNobmljYWwgZGlyZWN0aW9uIG9mIEF1cmEgYW5kIGJ1aWxkcyB0aGUgc3lzdGVtcyBiZWhpbmQgdGhlIHByb2R1Y3QuIEhlXG4gICAgICAgICAgICAgICAgICAgIGd1aWRlcyBhcmNoaXRlY3R1cmUgYW5kIGV4ZWN1dGlvbiBzbyB0aGUgcGxhdGZvcm0gc2NhbGVzIHdpdGggc3BlZWQgYW5kIHJlbGlhYmlsaXR5LlxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGJvcmRlci10IGJvcmRlci1icmFuZC1ib3JkZXIgcHQtMTYgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGxlZnQtMS8yIHRvcC0wIC16LTEwIGgtWzM0MHB4XSB3LVszNDBweF0gLXRyYW5zbGF0ZS14LTEvMiByb3VuZGVkLWZ1bGwgYmctW3ZhcigtLWNvbG9yLWJyYW5kLW9yYW5nZSldLzYgYmx1ci1bODVweF1cIiAvPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJteC1hdXRvIG1iLTQgbWF4LXctWzE0Y2hdIHRleHQtYmFsYW5jZSB0ZXh0LVsycmVtXSBmb250LW1lZGl1bSB0cmFja2luZy10aWdodGVyIHRleHQtYnJhbmQtY3JlbWUgbWQ6bWF4LXctWzEzY2hdIG1kOnRleHQtWzIuOHJlbV1cIj5cbiAgICAgICAgICAgIFNlZSB0aGUgcHJvZHVjdCB3b3JrZmxvdyBsaXZlLlxuICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXgtYXV0byBtYi03IG1heC13LWxnIHRleHQtYmFzZSB0ZXh0LWJyYW5kLW11dGVkXCI+XG4gICAgICAgICAgICBXZeKAmWxsIHNob3cgdGhlIGludGFrZSwgcXVhbGlmaWNhdGlvbiwgYW5kIHJvdXRpbmcgbGF5ZXIgb24gYSBsaXZlIHdhbGt0aHJvdWdoIGJ1aWx0IGFyb3VuZCB5b3VyIHRlYW0uXG4gICAgICAgICAgPC9wPlxuICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICB0bz17U0lURV9MSU5LUy5ib29rRGVtb31cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IHJvdW5kZWQtZnVsbCBiZy1bdmFyKC0tY29sb3ItYnJhbmQtb3JhbmdlKV0gcHgtOCBweS00IHRleHQtbGcgZm9udC1tZWRpdW0gdGV4dC13aGl0ZSB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgaG92ZXI6Ymctb3BhY2l0eS05MFwiXG4gICAgICAgICAgPlxuICAgICAgICAgICAgQm9vayBEZW1vXG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvbW90aW9uLmRpdj5cbiAgKTtcbn1cbiJdLCJmaWxlIjoiQzovVXNlcnMvQ2hyaXN0b3BoZXIgSGFucnlhbi9hdXRvbWF0aW9uX3dlYnNpdGUvc3JjL2FwcC9jb21wb25lbnRzL0Fib3V0LnRzeCJ9
