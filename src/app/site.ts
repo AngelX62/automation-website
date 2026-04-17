@@ -11,7 +11,7 @@ export const SITE_LINKS = {
   work: '/process',
   about: '/about',
   contact: '/contact',
-  bookDemo: '/contact',
+  bookDemo: '/book-demo',
   startProject: createMailtoLink(SITE_CONTACT.email, 'Project Consultation'),
   openRoles: createMailtoLink(SITE_CONTACT.careersEmail, 'Open Roles Inquiry'),
 } as const;

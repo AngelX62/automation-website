@@ -152,8 +152,9 @@ function HomeLanding() {
                 <span className="text-[#4A5D4E]">Architecture.</span>
               </h1>
               <p className="mt-8 max-w-lg text-lg font-light leading-relaxed text-[#1A1A1A]/70 md:text-xl">
-                Avenarc designs precise automation systems and lead pipelines for premium real estate, architecture,
-                and interior design studios. We build infrastructure that scales elegance.
+                Avenarc designs lead handling and operational infrastructure for architecture, interior design, and
+                select property firms. We create systems that capture inquiries, preserve discretion, and move
+                opportunities forward with clarity.
               </p>
             </div>
 
@@ -162,7 +163,7 @@ function HomeLanding() {
                 to="/process"
                 className="inline-flex items-center gap-4 border-b border-[#1A1A1A] pb-1 text-sm font-semibold uppercase tracking-widest transition-colors hover:border-[#4A5D4E] hover:text-[#4A5D4E]"
               >
-                Discover our methodology
+                Discover Our Methodology
                 <ArrowUpRight size={16} />
               </Link>
             </div>
@@ -187,27 +188,27 @@ function HomeLanding() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 divide-y divide-[#E5E3DB] md:grid-cols-3 md:divide-y-0 md:divide-x">
             <div className="py-16 md:py-24 md:pr-12">
-              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">01 — Precision</span>
+              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">01 Precision</span>
               <h3 className="mb-4 text-2xl font-medium tracking-tight">Engineered Systems</h3>
               <p className="font-light leading-relaxed text-[#1A1A1A]/70">
-                We replace chaotic, manual lead tracking with quiet, intelligent pipelines that operate with
-                architectural predictability.
+                We replace scattered lead handling with ordered pipelines that qualify, route, and respond with
+                consistency. The result is a structure your firm can rely on.
               </p>
             </div>
             <div className="py-16 md:px-12 md:py-24">
-              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">02 — Discretion</span>
+              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">02 Discretion</span>
               <h3 className="mb-4 text-2xl font-medium tracking-tight">Invisible Intelligence</h3>
               <p className="font-light leading-relaxed text-[#1A1A1A]/70">
-                High-end clients demand a seamless experience. Our automations are designed to feel deeply personal,
-                never robotic or templated.
+                The best systems are never noticed. Communication remains personal, timely, and aligned with the
+                standards of a premium practice.
               </p>
             </div>
             <div className="py-16 md:py-24 md:pl-12">
-              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">03 — Scale</span>
+              <span className="mb-4 block text-sm font-medium text-[#4A5D4E]">03 Scale</span>
               <h3 className="mb-4 text-2xl font-medium tracking-tight">Compounding Leverage</h3>
               <p className="font-light leading-relaxed text-[#1A1A1A]/70">
-                By structuring your operations logically, we create a foundation that supports exponential growth
-                without proportional overhead.
+                When the structure is sound, growth no longer creates equal administrative weight. Capacity expands
+                while operations remain composed.
               </p>
             </div>
           </div>
@@ -223,19 +224,19 @@ function HomeLanding() {
             {[
               {
                 title: 'Client Acquisition Pipelines',
-                desc: 'Sophisticated intake structures that qualify and route high-net-worth inquiries effortlessly.',
+                desc: 'Structured intake systems that capture, qualify, and route serious inquiries with speed and precision.',
               },
               {
-                title: 'CRM Architecture',
-                desc: 'Custom-configured database models designed specifically for project-based structural firms.',
+                title: 'Communication Architecture',
+                desc: 'Response systems designed to feel thoughtful, measured, and entirely consistent with a premium client experience.',
               },
               {
-                title: 'Communication Automation',
-                desc: 'Scheduled, context-aware touchpoints that nurture leads without breaking the premium facade.',
+                title: 'Pipeline Stewardship',
+                desc: 'Follow through that protects momentum from first inquiry to consultation, proposal, and signed engagement.',
               },
               {
-                title: 'Operational Dashboards',
-                desc: 'Clean, restrained data visualizations providing executive oversight of pipeline health.',
+                title: 'Operational Reporting',
+                desc: 'Clear visibility into lead flow, response quality, and conversion so decisions are made from signal rather than assumption.',
               },
             ].map((service) => (
               <div
@@ -254,9 +255,14 @@ function HomeLanding() {
               </div>
             ))}
             <div className="mt-12">
+              <h3 className="text-3xl font-medium tracking-tighter md:text-4xl">Commissioned Infrastructure for Growth.</h3>
+              <p className="mt-4 max-w-2xl font-light leading-relaxed text-[#1A1A1A]/70">
+                We do not begin with software. We begin with structure. Every Avenarc engagement is designed to reduce
+                friction, protect brand quality, and support growth without unnecessary noise.
+              </p>
               <Link
                 to="/solutions"
-                className="inline-block border border-[#1A1A1A] px-6 py-3 text-xs font-medium uppercase tracking-widest transition-colors hover:bg-[#1A1A1A] hover:text-[#F9F8F6]"
+                className="mt-8 inline-block border border-[#1A1A1A] px-6 py-3 text-xs font-medium uppercase tracking-widest transition-colors hover:bg-[#1A1A1A] hover:text-[#F9F8F6]"
               >
                 View all solutions
               </Link>

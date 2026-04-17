@@ -5,6 +5,7 @@ const teamMembers = [
     name: 'Laurentius Hanryan',
     role: 'CEO & Co-Founder',
     image: '/images/laurentius-hanryan.png',
+    imageClassName: 'scale-[1.12] object-[center_12%]',
     alt: 'Portrait of Laurentius Hanryan',
     bio: 'Laurentius leads the commercial direction of Avenarc. He stays close to the pace, expectations, and client dynamics of premium firms so every system is shaped around how real engagements begin, progress, and convert.',
     focus:
@@ -13,7 +14,8 @@ const teamMembers = [
   {
     name: 'Christopher Hanryan',
     role: 'CTO & Co-Founder',
-    image: '/images/christopher-hanryan.jpeg',
+    image: '/images/christopher-hanryan.png',
+    imageClassName: 'object-top',
     alt: 'Portrait of Christopher Hanryan',
     bio: 'Christopher architects the technical layer behind Avenarc. He designs the intake logic, qualification structure, routing, summaries, and operational systems that keep client coordination clear and disciplined.',
     focus:
@@ -124,7 +126,11 @@ export function About() {
               {teamMembers.map((member) => (
                 <article key={member.name} className="border border-[#E5E3DB] bg-[#F4F3EF]">
                   <div className="aspect-[4/5] overflow-hidden bg-[#E5E3DB]">
-                    <img src={member.image} alt={member.alt} className="h-full w-full object-cover object-top" />
+                    <img
+                      src={member.image}
+                      alt={member.alt}
+                      className={`h-full w-full object-cover ${member.imageClassName}`}
+                    />
                   </div>
                   <div className="space-y-5 p-6 md:p-8">
                     <div>

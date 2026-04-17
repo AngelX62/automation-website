@@ -6,6 +6,7 @@ import { Solutions } from "./components/Solutions";
 import { Process } from "./components/Process";
 import { Contact } from "./components/Contact";
 import { BrandAssets } from "./components/BrandAssets";
+import { BookDemo } from "./components/BookDemo";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
       { path: "about", Component: About },
       { path: "contact", Component: Contact },
       { path: "brand", Component: BrandAssets },
-      { path: "book-demo", Component: Contact },
+      { path: "book-demo", Component: BookDemo },
     ],
   },
 ]);

@@ -1,26 +1,27 @@
+import { Link } from "react-router";
 import { motion } from "motion/react";
 
 export function Process() {
   const steps = [
     {
       num: "01",
-      title: "Audit & Blueprint",
-      desc: "We begin by analyzing your current operational flow. We identify bottlenecks in your lead capture, mapping out a structured architecture that aligns with your firm's premium positioning. No detail is too small.",
+      title: "Audit and Blueprint",
+      desc: "Every engagement begins with a close review of how inquiries enter the business and where momentum is lost. We examine the current flow, identify the points of friction, and define the blueprint that will support a more disciplined operation.",
     },
     {
       num: "02",
       title: "Structural Design",
-      desc: "Before any software is touched, we draft the logic. We design the wireframes of your data models, communication trees, and qualification parameters, ensuring every piece serves a specific, elegant purpose.",
+      desc: "Before any workflow is built, we design the logic. Data structure, routing paths, qualification criteria, and communication flows are defined in advance. Every element serves a clear purpose before a single scenario is configured.",
     },
     {
       num: "03",
       title: "Engineering",
-      desc: "The build phase. We construct the infrastructure quietly in the background, integrating your CRM, forms, and email systems into a single, cohesive ecosystem. We write custom code where off-the-shelf solutions fall short.",
+      desc: "Once the architecture is confirmed, we build. Intake systems, qualification logic, communication infrastructure, and reporting are assembled into a single environment designed to operate without friction or visibility.",
     },
     {
       num: "04",
-      title: "Refinement",
-      desc: "Systems require calibration. We launch the automation protocols in a controlled environment, testing edge cases and refining the tone of communications to ensure the experience feels entirely human.",
+      title: "Stewardship",
+      desc: "Implementation is only the beginning. We remain involved through oversight, refinement, and performance review. The system is calibrated, managed, and held to standard so it stays reliable and commercially useful over time.",
     },
   ];
 
@@ -35,11 +36,12 @@ export function Process() {
         >
           <span className="mb-6 block text-sm font-medium uppercase tracking-widest text-[#4A5D4E]">Methodology</span>
           <h1 className="mb-8 text-5xl font-medium tracking-tighter leading-[1] md:text-7xl">
-            The Architecture <br /> of Automation.
+            The Architecture <br /> of Quiet Systems.
           </h1>
           <p className="text-xl font-light leading-relaxed text-[#1A1A1A]/70">
-            We approach automation the same way an architect approaches a building: with rigorous planning, structural
-            integrity, and an uncompromising eye for detail.
+            We approach operational infrastructure the way an architect approaches a building. With careful review,
+            structural clarity, and deliberate intent. The result is infrastructure that removes friction without
+            disturbing the experience your firm is known for.
           </p>
         </motion.div>
 
@@ -71,13 +73,15 @@ export function Process() {
 
       <section className="bg-[#1A1A1A] py-32 text-[#F9F8F6]">
         <div className="container mx-auto px-6 text-center md:px-12">
-          <h2 className="mb-8 text-3xl font-medium tracking-tighter md:text-5xl">Ready to build your foundation?</h2>
-          <a
-            href="/contact"
+          <h2 className="mb-8 text-3xl font-medium tracking-tighter md:text-5xl">
+            Ready to review the structure behind your growth?
+          </h2>
+          <Link
+            to="/contact"
             className="inline-block border border-[#F9F8F6] px-8 py-4 text-xs font-medium uppercase tracking-widest transition-colors hover:bg-[#F9F8F6] hover:text-[#1A1A1A]"
           >
-            Initiate Project
-          </a>
+            Request Consultation
+          </Link>
         </div>
       </section>
     </div>
