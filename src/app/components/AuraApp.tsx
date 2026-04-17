@@ -40,7 +40,7 @@ export function Navbar() {
           onClick={() => setIsMenuOpen(false)}
         >
           <div className="h-6 w-6 rounded-full bg-gradient-to-tr from-brand-accent to-brand-accent-alt" />
-          Avenix
+          Avelyx
         </Link>
         <div className="hidden items-center gap-8 text-sm font-medium text-brand-muted md:flex">
           <Link to={SITE_LINKS.services} className="transition-colors hover:text-brand-creme">
@@ -149,7 +149,7 @@ export function Hero() {
         </h1>
 
         <p className="mb-9 max-w-2xl text-lg font-medium leading-relaxed text-brand-muted drop-shadow-[0_10px_30px_rgba(0,0,0,0.28)] md:text-xl">
-          Avenix helps studios capture inquiries, filter out poor-fit requests, qualify the right opportunities, and
+          Avelyx helps studios capture inquiries, filter out poor-fit requests, qualify the right opportunities, and
           keep consultation follow-up moving before the pipeline stalls.
         </p>
 
@@ -585,7 +585,7 @@ export function Pricing() {
             Engagements Structured by Scope.
           </h2>
           <p className="mx-auto max-w-xl text-lg text-brand-muted">
-            Every Avenix engagement begins with implementation and continues through ongoing stewardship. The
+            Every Avelyx engagement begins with implementation and continues through ongoing stewardship. The
             distinction between plans is not access to software. It is the depth of infrastructure we design and
             steward on your behalf.
           </p>
@@ -670,7 +670,7 @@ export function Pricing() {
               Bespoke engagements are structured individually. They may extend beyond acquisition and conversion into
               onboarding. Reporting design. Review and referral systems. Multi team routing. Private operational
               interfaces. Wider administrative infrastructure. Where conventional workflow infrastructure becomes too
-              rigid, Avenix can also design more advanced decision layers for highly specific operational environments.
+              rigid, Avelyx can also design more advanced decision layers for highly specific operational environments.
             </p>
 
             <div className="mb-9 flex-1 space-y-4">
@@ -736,7 +736,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-[85rem] flex-col items-center justify-between gap-6 text-sm font-medium text-brand-muted md:flex-row">
         <div className="flex items-center gap-2">
           <div className="h-5 w-5 rounded-full bg-gradient-to-tr from-brand-accent to-brand-accent-alt" />
-          <span className="text-brand-creme">Avenix</span> © 2026.
+          <span className="text-brand-creme">Avelyx</span> © 2026.
         </div>
         <div className="flex gap-8">
           <Link to={SITE_LINKS.work} className="transition-colors hover:text-brand-creme">

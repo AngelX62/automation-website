@@ -123,7 +123,7 @@ function IntroSplash({
             duration={10.5}
             containerClassName="mt-[clamp(14.5rem,34vh,19.5rem)] md:mt-[clamp(17.5rem,40vh,24rem)]"
           >
-            Enter Avenix
+            Enter Avelyx
             <span className="rounded-full border border-white/8 bg-white/7 p-1.5 text-[var(--color-brand-accent)] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:bg-white/10">
               <ArrowUpRight size={16} />
             </span>
@@ -152,7 +152,7 @@ function HomeLanding() {
                 <span className="text-[#4A5D4E]">Architecture.</span>
               </h1>
               <p className="mt-8 max-w-lg text-lg font-light leading-relaxed text-[#1A1A1A]/70 md:text-xl">
-                Avenix designs lead handling and operational infrastructure for architecture, interior design, and
+                Avelyx designs lead handling and operational infrastructure for architecture, interior design, and
                 select property firms. We create systems that capture inquiries, preserve discretion, and move
                 opportunities forward with clarity.
               </p>
@@ -257,7 +257,7 @@ function HomeLanding() {
             <div className="mt-12">
               <h3 className="text-3xl font-medium tracking-tighter md:text-4xl">Commissioned Infrastructure for Growth.</h3>
               <p className="mt-4 max-w-2xl font-light leading-relaxed text-[#1A1A1A]/70">
-                We do not begin with software. We begin with structure. Every Avenix engagement is designed to reduce
+                We do not begin with software. We begin with structure. Every Avelyx engagement is designed to reduce
                 friction, protect brand quality, and support growth without unnecessary noise.
               </p>
               <Link

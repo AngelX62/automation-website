@@ -32,7 +32,7 @@ const FIELD_BASE_CLASSES =
   'w-full rounded-[1.2rem] border bg-brand-dark/70 px-4 py-3.5 text-base text-brand-creme outline-none transition-colors placeholder:text-brand-muted/60 focus:border-[var(--color-brand-accent)]';
 
 function buildDemoMailto(values: DemoFormValues) {
-  const subject = `Avenix Walkthrough Request - ${values.company}`;
+  const subject = `Avelyx Walkthrough Request - ${values.company}`;
   const body = [
     'New walkthrough request',
     '',
