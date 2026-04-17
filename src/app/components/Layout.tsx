@@ -80,7 +80,7 @@ export function Layout() {
               <div className="container mx-auto flex items-center justify-between px-6 md:px-12">
                 <Link to="/" className="group flex items-center gap-3 transition-opacity hover:opacity-70">
                   <Logo className="h-5 w-5 text-[#1A1A1A] transition-colors group-hover:text-[#4A5D4E] md:h-6 md:w-6" />
-                  <span className="text-xl font-medium tracking-tight md:text-2xl">Avenarc.</span>
+                  <span className="text-xl font-medium tracking-tight md:text-2xl">Avenix.</span>
                 </Link>
 
                 <nav className="hidden items-center gap-10 md:flex">
@@ -156,7 +156,7 @@ export function Layout() {
               <div className="md:col-span-2">
                 <Link to="/" className="group mb-6 flex w-fit items-center gap-3 transition-opacity hover:opacity-70">
                   <Logo className="h-6 w-6 text-[#1A1A1A] transition-colors group-hover:text-[#4A5D4E]" />
-                  <span className="text-2xl font-medium tracking-tight">Avenarc.</span>
+                  <span className="text-2xl font-medium tracking-tight">Avenix.</span>
                 </Link>
                 <p className="max-w-sm text-sm leading-relaxed text-[#1A1A1A]/60">
                   Architecting intelligent automation and precise lead pipelines for design, real estate, and
@@ -200,7 +200,7 @@ export function Layout() {
             </div>
 
             <div className="flex flex-col items-center justify-between gap-4 border-t border-[#E5E3DB] pt-8 md:flex-row">
-              <p className="text-xs text-[#1A1A1A]/50">© {new Date().getFullYear()} Avenarc Systems. All rights reserved.</p>
+              <p className="text-xs text-[#1A1A1A]/50">© {new Date().getFullYear()} Avenix Systems. All rights reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="text-xs text-[#1A1A1A]/50 hover:text-[#1A1A1A]">
                   Privacy Policy

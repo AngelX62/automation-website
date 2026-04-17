@@ -7,7 +7,7 @@ const teamMembers = [
     image: '/images/laurentius-hanryan.png',
     imageClassName: 'scale-[1.12] object-[center_12%]',
     alt: 'Portrait of Laurentius Hanryan',
-    bio: 'Laurentius leads the commercial direction of Avenarc. He stays close to the pace, expectations, and client dynamics of premium firms so every system is shaped around how real engagements begin, progress, and convert.',
+    bio: 'Laurentius leads the commercial direction of Avenix. He stays close to the pace, expectations, and client dynamics of premium firms so every system is shaped around how real engagements begin, progress, and convert.',
     focus:
       'His focus is fit, positioning, and delivery alignment so the work reflects the standard your clients experience from first inquiry onward.',
   },
@@ -17,7 +17,7 @@ const teamMembers = [
     image: '/images/christopher-hanryan.png',
     imageClassName: 'object-top',
     alt: 'Portrait of Christopher Hanryan',
-    bio: 'Christopher architects the technical layer behind Avenarc. He designs the intake logic, qualification structure, routing, summaries, and operational systems that keep client coordination clear and disciplined.',
+    bio: 'Christopher architects the technical layer behind Avenix. He designs the intake logic, qualification structure, routing, summaries, and operational systems that keep client coordination clear and disciplined.',
     focus:
       'His focus is building infrastructure that feels quiet in use, precise in logic, and dependable under the pressure of live commercial work.',
   },
@@ -35,7 +35,7 @@ export function About() {
             className="text-center lg:col-span-6 lg:col-start-4"
           >
             <span className="mb-6 block text-sm font-medium uppercase tracking-widest text-[#4A5D4E]">
-              About Avenarc
+              About Avenix
             </span>
             <h1 className="text-4xl font-medium tracking-tighter leading-[1.1] md:text-6xl">
               Intelligence built for the aesthetic class.
@@ -48,7 +48,7 @@ export function About() {
         <div className="relative mb-24 aspect-[21/9] w-full overflow-hidden bg-[#E5E3DB]">
           <img
             src="https://images.unsplash.com/photo-1769515090543-1026b3848d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBuZXV0cmFsJTIwd2FybXxlbnwxfHx8fDE3NzYwNjcyMjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Avenarc studio minimal interior"
+            alt="Avenix studio minimal interior"
             className="h-full w-full object-cover grayscale-[10%]"
           />
         </div>
@@ -60,7 +60,7 @@ export function About() {
           <div className="border-t border-[#E5E3DB] pt-6 md:col-span-8">
             <div className="prose prose-lg max-w-none font-light leading-relaxed text-[#1A1A1A]/80">
               <p className="mb-6">
-                Avenarc was founded on a simple observation: the world&apos;s most premium design, architecture, and
+                Avenix was founded on a simple observation: the world&apos;s most premium design, architecture, and
                 real estate firms were managing their growth with the same chaotic, fragmented tools as generic
                 startups.
               </p>
@@ -116,7 +116,7 @@ export function About() {
           <div className="border-t border-[#E5E3DB] pt-6 md:col-span-8">
             <div className="mb-12 max-w-3xl">
               <p className="text-lg font-light leading-relaxed text-[#1A1A1A]/80">
-                Avenarc is led by two co-founders with distinct responsibilities. One stays close to the commercial
+                Avenix is led by two co-founders with distinct responsibilities. One stays close to the commercial
                 realities of the firms we serve. The other designs the systems that keep those firms responsive,
                 structured, and clear under growth.
               </p>
