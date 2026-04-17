@@ -580,42 +580,42 @@ export function Pricing() {
     <section className="relative border-y border-brand-border bg-brand-surface px-6 py-20">
       <div className="mx-auto max-w-[85rem]">
         <div className="mb-14 text-center">
+          <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-muted">PLANS</div>
           <h2 className="mb-4 text-[2.3rem] font-medium tracking-tighter text-brand-creme md:text-[2.9rem]">
-            Choose your rollout path
+            Engagements Structured by Scope.
           </h2>
           <p className="mx-auto max-w-xl text-lg text-brand-muted">
-            Each rollout starts by mapping how requests arrive, where fit decisions slow down, and which team needs
-            visibility first.
-          </p>
-          <p className="mx-auto mt-3 max-w-xl text-sm text-brand-muted">
-            Built for commercial interior design studios first, and adapted for closely related project partners when
-            the workflow matches.
+            Every Avenarc engagement begins with implementation and continues through ongoing stewardship. The
+            distinction between plans is not access to software. It is the depth of infrastructure we design and
+            steward on your behalf.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="flex flex-col rounded-[2rem] border border-brand-border bg-brand-dark p-7 md:p-8">
-            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted">Foundation</div>
-            <div className="mb-2 text-3xl font-semibold tracking-tighter text-brand-creme">Intake Audit</div>
+            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted">01</div>
+            <div className="mb-2 text-3xl font-semibold tracking-tighter text-brand-creme">Foundation</div>
+            <p className="mb-3 text-sm leading-relaxed text-brand-creme/80">
+              For firms that need every serious inquiry captured. Qualified. Acknowledged with precision.
+            </p>
             <p className="mb-7 text-sm leading-relaxed text-brand-muted">
-              Map how inquiries arrive, what counts as a good-fit opportunity, and where summaries, handoffs, or
-              reminders break down today.
+              Foundation establishes the core acquisition infrastructure. We configure your intake flow. Your
+              qualification logic. Your routing structure. Your first response layer. New opportunities are received
+              and handled without delay. It is designed for firms that want operational discipline at the front of the
+              pipeline without unnecessary complexity.
             </p>
 
-            <ul className="mb-9 flex-1 space-y-4">
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-brand-muted" /> Intake-source map across forms, inboxes,
-                referrals, and proposal requests
-              </li>
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-brand-muted" /> Studio-specific qualification criteria and fit
-                logic
-              </li>
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-brand-muted" /> Recommended coordination flow for principals and
-                studio coordinators
-              </li>
-            </ul>
+            <div className="mb-9 flex-1 space-y-4">
+              <p className="text-sm leading-relaxed text-brand-creme/80">
+                <span className="font-medium text-brand-creme">Typically included.</span> Lead capture and
+                consolidation. Qualification criteria and scoring. Routing logic. First response infrastructure. One
+                foundational follow up sequence. Recurring reporting.
+              </p>
+              <p className="text-sm leading-relaxed text-brand-creme/80">
+                <span className="font-medium text-brand-creme">Commercial structure.</span> Implementation fee. Monthly
+                stewardship retainer.
+              </p>
+            </div>
             <Link
               to={SITE_LINKS.bookDemo}
               className="inline-flex w-full items-center justify-center rounded-full border border-brand-border bg-brand-surface py-4 font-medium text-brand-creme transition-colors hover:bg-brand-border"
@@ -628,27 +628,29 @@ export function Pricing() {
             <div className="absolute right-8 top-0 rounded-b-lg bg-brand-dark px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-brand-orange)]">
               Most Common
             </div>
-            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/80">Rollout</div>
-            <div className="mb-2 text-3xl font-semibold tracking-tighter text-white">Core Pipeline Rollout</div>
+            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/80">02</div>
+            <div className="mb-2 text-3xl font-semibold tracking-tighter text-white">Signature</div>
+            <p className="mb-3 text-sm leading-relaxed text-white/90">
+              For firms that require stronger follow through. Clearer pipeline discipline. More deliberate conversion.
+            </p>
             <p className="mb-7 text-sm leading-relaxed text-white/80">
-              Implement structured intake, qualification summaries, routing, owner reminders, and consultation
-              coordination for one studio team.
+              Signature extends beyond intake into the stewardship of active opportunities. We design the communication
+              and sequencing layer that keeps strong leads moving. It surfaces stalled proposals. It reduces the quiet
+              loss that often occurs between first contact and signed engagement. It is intended for firms where
+              response quality and pipeline continuity are commercially significant.
             </p>
 
-            <ul className="mb-9 flex-1 space-y-4">
-              <li className="flex items-center gap-3 text-sm text-white">
-                <CheckCircle2 size={16} className="text-white/60" /> Inquiry intake and brief summaries
-              </li>
-              <li className="flex items-center gap-3 text-sm text-white">
-                <CheckCircle2 size={16} className="text-white/60" /> Fit, budget, scope, and timing logic
-              </li>
-              <li className="flex items-center gap-3 text-sm text-white">
-                <CheckCircle2 size={16} className="text-white/60" /> Owner routing and follow-up support
-              </li>
-              <li className="flex items-center gap-3 text-sm text-white">
-                <CheckCircle2 size={16} className="text-white/60" /> Pipeline visibility for active opportunities
-              </li>
-            </ul>
+            <div className="mb-9 flex-1 space-y-4">
+              <p className="text-sm leading-relaxed text-white/90">
+                <span className="font-medium text-white">Typically included.</span> Everything in Foundation. Deeper
+                follow up architecture. More nuanced routing logic. Escalation handling. Stronger proposal stage
+                discipline. A more active reporting and refinement cadence.
+              </p>
+              <p className="text-sm leading-relaxed text-white/90">
+                <span className="font-medium text-white">Commercial structure.</span> Implementation fee. Monthly
+                stewardship retainer.
+              </p>
+            </div>
             <Link
               to={SITE_LINKS.bookDemo}
               className="inline-flex w-full items-center justify-center rounded-full bg-brand-dark py-4 font-medium text-white transition-colors hover:bg-black"
@@ -658,31 +660,34 @@ export function Pricing() {
           </div>
 
           <div className="flex flex-col rounded-[2rem] border border-brand-border bg-brand-dark p-7 md:p-8">
-            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted">Expansion</div>
-            <div className="mb-2 text-3xl font-semibold tracking-tighter text-brand-creme">Multi-Team Coordination</div>
+            <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-muted">03</div>
+            <div className="mb-2 text-3xl font-semibold tracking-tighter text-brand-creme">Bespoke</div>
+            <p className="mb-3 text-sm leading-relaxed text-brand-creme/80">
+              For firms with greater operational complexity. Broader requirements. A need for commissioned
+              infrastructure beyond the core pipeline.
+            </p>
             <p className="mb-7 text-sm leading-relaxed text-brand-muted">
-              Extend the workflow across principals, business development, studio coordinators, and closely related
-              project partners.
+              Bespoke engagements are structured individually. They may extend beyond acquisition and conversion into
+              onboarding. Reporting design. Review and referral systems. Multi team routing. Private operational
+              interfaces. Wider administrative infrastructure. Where conventional workflow infrastructure becomes too
+              rigid, Avenarc can also design more advanced decision layers for highly specific operational environments.
             </p>
 
-            <ul className="mb-9 flex-1 space-y-4">
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-[var(--color-brand-accent)]" /> Shared pipeline visibility
-                across roles
-              </li>
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-[var(--color-brand-accent)]" /> Role-based routing and owner
-                reminders
-              </li>
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-[var(--color-brand-accent)]" /> Consultation and proposal-request
-                coordination
-              </li>
-              <li className="flex items-center gap-3 text-sm text-brand-creme/80">
-                <CheckCircle2 size={16} className="text-[var(--color-brand-accent)]" /> Ongoing refinement as the
-                studio workflow evolves
-              </li>
-            </ul>
+            <div className="mb-9 flex-1 space-y-4">
+              <p className="text-sm leading-relaxed text-brand-creme/80">
+                <span className="font-medium text-brand-creme">Typically included.</span> Custom scope defined by
+                operational need. Stakeholder structure. Channel complexity. Reporting requirements. Long term
+                infrastructure strategy.
+              </p>
+              <p className="text-sm leading-relaxed text-brand-creme/80">
+                <span className="font-medium text-brand-creme">Commercial structure.</span> Structured by scope.
+              </p>
+              <p className="text-sm leading-relaxed text-brand-creme/80">
+                In select future engagements, advanced decision infrastructure and bespoke agent frameworks may be
+                commissioned for unusually complex workflows. Always with strict control over permissions. Logic.
+                Oversight.
+              </p>
+            </div>
             <Link
               to={SITE_LINKS.bookDemo}
               className="inline-flex w-full items-center justify-center rounded-full border border-brand-border bg-brand-surface py-4 font-medium text-brand-creme transition-colors hover:bg-brand-border"
@@ -691,6 +696,12 @@ export function Pricing() {
             </Link>
           </div>
         </div>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-sm leading-relaxed text-brand-muted">
+          Every engagement begins with a review of your current intake. Your communication flow. Your operational
+          constraints. We do not prescribe infrastructure before understanding the shape of the work. The aim is always
+          the same. Fewer dropped opportunities. Cleaner communication. Infrastructure that operates quietly in the
+          background.
+        </p>
       </div>
     </section>
   );
