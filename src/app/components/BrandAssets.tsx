@@ -54,7 +54,7 @@ export function BrandAssets() {
           <span className="mb-6 block text-sm font-medium uppercase tracking-widest text-[#4A5D4E]">Brand Assets</span>
           <h1 className="mb-8 text-4xl font-medium tracking-tighter leading-[1] md:text-6xl">Logo Exports</h1>
           <p className="text-xl font-light leading-relaxed text-[#1A1A1A]/70">
-            High-resolution brand marks for Avelyx. Click the download buttons below to export them as 1024x1024 PNG
+            High-resolution brand marks for Avitus. Click the download buttons below to export them as 1024x1024 PNG
             files.
           </p>
         </motion.div>
@@ -67,7 +67,7 @@ export function BrandAssets() {
             <div className="flex w-full flex-col items-center gap-4">
               <h3 className="text-lg font-medium tracking-tight">Structural Monogram</h3>
               <button
-                onClick={() => downloadPNG("logo-structural", "avelyx-structural-logo.png")}
+                onClick={() => downloadPNG("logo-structural", "avitus-structural-logo.png")}
                 className="w-full bg-[#1A1A1A] px-6 py-3 text-center text-xs font-medium uppercase tracking-widest text-[#F9F8F6] transition-colors hover:bg-[#4A5D4E]"
               >
                 Download PNG
@@ -82,7 +82,7 @@ export function BrandAssets() {
             <div className="flex w-full flex-col items-center gap-4">
               <h3 className="text-lg font-medium tracking-tight">Folded Steel</h3>
               <button
-                onClick={() => downloadPNG("logo-folded", "avelyx-folded-logo.png")}
+                onClick={() => downloadPNG("logo-folded", "avitus-folded-logo.png")}
                 className="w-full bg-[#1A1A1A] px-6 py-3 text-center text-xs font-medium uppercase tracking-widest text-[#F9F8F6] transition-colors hover:bg-[#4A5D4E]"
               >
                 Download PNG
